@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import Account from "./Components/Account/Account";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Account from "./Components/Account/Account";

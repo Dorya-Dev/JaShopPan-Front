@@ -7,6 +7,9 @@ import Cart from "./Components/Cart/Cart";
 import Accueil from "./Components/Accueil/Accueil";
 import Content from "./Components/Content/Content";
 import Footer from "./Components/Footer/Footer";
+import Products from "./Components/Products/Products";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
         <Route path="/cart" component={Cart} exact />
         <Route path="/accueil" component={Accueil} exact />
         <Route path="/content" component={Content} exact />
+        <Route path="/products" component={Products} exact />
       </Switch>
       <Footer />
     </Router>

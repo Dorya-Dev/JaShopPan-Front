@@ -7,15 +7,15 @@
 .content img {
   max-height: 400px;
 }
-.Horizontal {
-  background-color: red;
-  margin: auto;
+.home-container {
+  margin: 0vh 2 vw 0vh 10vw;
 }
-.Horizontal2 {
-  background-color: royalblue;
-  margin: auto;
+.middle {
+  background-color: rgb(93, 117, 93);
 }
-.Horizontal3 {
-  background-color: saddlebrown;
-  margin: auto;
+.Toptendance {
+  background-color: green;
+}
+.test {
+  background-color: rgb(107, 96, 212);
 }

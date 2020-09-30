@@ -33,103 +33,79 @@ function Accueil() {
         </Carousel.Item>
       </Carousel>
       <br />
-      <div className="middle">
-        <Col className="Horizontal" sm={8}>
-          <h2>Figurines Mangas</h2>
-          <hr />
-          <Row>
-            <Col>
-              <img id="one-piece-mug" src="Skateboard-xs.jpg" alt="opmug" />
-              <br />
-              <label> Mug One Piece</label>
-            </Col>
-            <Col>
-              <img
-                id="one-piece-portecles"
-                src="Skateboard-xs.jpg"
-                alt="opmug"
-              />
-              <br />
-              <label> Porte-clés One Piece</label>
-            </Col>
-            <Col>
-              <img id="one-piece-mug" src="Skateboard-xs.jpg" alt="opmug" />
-              <br />
-              <label> Mug One Piece</label>
-            </Col>
-            <Col>
-              <img id="one-piece-mug" src="Skateboard-xs.jpg" alt="opmug" />
-              <br />
-              <label> Mug One Piece</label>
-            </Col>
-          </Row>
-        </Col>
-        <br />
-        <Col className="Horizontal2" sm={8}>
-          <h2>Figurines Jeux Vidéos</h2>
-          <hr />
-          <Row>
-            <Col>
-              <img id="one-piece-mug" src="Skateboard-xs.jpg" alt="opmug" />
-              <br />
-              <label> Mug One Piece</label>
-            </Col>
-            <Col>
-              <img
-                id="one-piece-portecles"
-                src="Skateboard-xs.jpg"
-                alt="opmug"
-              />
-              <br />
-              <label> Porte-clés One Piece</label>
-            </Col>
-            <Col>
-              <img id="one-piece-mug" src="Skateboard-xs.jpg" alt="opmug" />
-              <br />
-              <label> Mug One Piece</label>
-            </Col>
-            <Col>
-              <img id="one-piece-mug" src="Skateboard-xs.jpg" alt="opmug" />
-              <br />
-              <label> Mug One Piece</label>
-            </Col>
-          </Row>
-        </Col>
-        <br />
-        <Col className="Horizontal3" sm={8}>
-          <h2>Goodies</h2>
-          <hr />
-          <Row>
-            <Col>
-              <img id="one-piece-mug" src="Skateboard-xs.jpg" alt="opmug" />
-              <br />
-              <label> Mug One Piece</label>
-            </Col>
-            <Col>
-              <img
-                id="one-piece-portecles"
-                src="Skateboard-xs.jpg"
-                alt="opmug"
-              />
-              <br />
-              <label> Porte-clés One Piece</label>
-            </Col>
-            <Col>
-              <img id="one-piece-mug" src="Skateboard-xs.jpg" alt="opmug" />
-              <br />
-              <label> Mug One Piece</label>
-            </Col>
-            <Col>
-              <img id="one-piece-mug" src="Skateboard-xs.jpg" alt="opmug" />
-              <br />
-              <label> Mug One Piece</label>
-            </Col>
-          </Row>
-        </Col>
-        <Col className="vertical" sm={4}>
-          Top tendances !
-        </Col>
+      <div className="home-container">
+        <Row>
+          <Col xl={10} lg={8}>
+            <div className="middle">
+              <h2>Figurines Mangas</h2>
+              <hr />
+              <Row>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+              </Row>
+              <h2>Figurines Jeux Vidéos</h2>
+              <hr />
+              <Row>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+              </Row>
+              <h2>Goodies</h2>
+              <hr />
+              <Row>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+                <Col>
+                  <img src="Skateboard-xs.jpg" />
+                </Col>
+              </Row>
+            </div>
+          </Col>
+          <Col xl={2} lg={4}>
+            <div className="Toptendance">
+              <Col>
+                <img src="Skateboard-xs.jpg" />
+              </Col>
+              <Col>
+                <img src="Skateboard-xs.jpg" />
+              </Col>
+              <Col>
+                <img src="Skateboard-xs.jpg" />
+              </Col>
+              <Col>
+                <img src="Skateboard-xs.jpg" />
+              </Col>
+            </div>
+          </Col>
+        </Row>
       </div>
+      <br />
     </section>
   );
 }

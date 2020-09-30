@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { RiPictureInPictureLine } from "react-icons/ri";
 import "./account.css";
 
 function Account(props) {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [display, setDisplay] = useState("");
-  display = ["Vous êtes connectés", "Mauvais mot de passe ou email"];
 
   const handleLogin = (e) => {
     setLogin(e.target.value);
@@ -17,11 +17,11 @@ function Account(props) {
 
   function SignIn() {
     if (password === props.password && login === props.email) {
-      setDisplay(display);
+      setDisplay("Vous êtes connectés");
       console.log("log in success");
     } else {
       setPassword("");
-      setDisplay(display);
+      setDisplay("Mauvais mot de passe ou email");
       console.log("wrong password or email");
     }
   }
@@ -60,7 +60,7 @@ function Account(props) {
             Log In
           </button>
           <div>
-            <span>{display}</span>
+            <span class="return">{display}</span>
           </div>
         </div>
       </div>

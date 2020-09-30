@@ -1,0 +1,21 @@
+.content {
+  background-color: gray;
+  height: 400px;
+  width: 900px;
+  margin: auto;
+}
+.content img {
+  max-height: 400px;
+}
+.Horizontal {
+  background-color: red;
+  margin: auto;
+}
+.Horizontal2 {
+  background-color: royalblue;
+  margin: auto;
+}
+.Horizontal3 {
+  background-color: saddlebrown;
+  margin: auto;
+}

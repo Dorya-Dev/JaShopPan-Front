@@ -16,9 +16,12 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route path="/account" component={Account} exact />
+        <Route path="/account" exact>
+          <Account email={"test@test.fr"} password={"1234"} />
+        </Route>
+
         <Route path="/cart" component={Cart} exact />
-        <Route path="/accueil" component={Accueil} exact />
+        <Accueil />
         <Route path="/content" component={Content} exact />
         <Route path="/products" component={Products} exact />
       </Switch>

@@ -1,0 +1,15 @@
+.products {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.products .title {
+  color: rgb(75, 70, 70);
+}
+.products .title2 {
+  color: rgb(56, 61, 56);
+}
+/*.products .one-piece-mug {
+  text-align: center;
+}*/

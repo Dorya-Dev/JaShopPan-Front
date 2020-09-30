@@ -2,10 +2,60 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./content.css";
+import ProductRow from "./ProductRow";
 
 function Content() {
+  const products1 = [
+    {
+      title: "Figurine Luffy",
+      image: "./img/figurine/onepiece/One-piece-Luffy-xs.jpg",
+    },
+    {
+      title: "Figurine Luffy 20th Anniversary",
+      image: "./img/figurine/onepiece/One-piece-Luffy-anniv-xs.jpg",
+    },
+    {
+      title: "Figurine Chopper",
+      image: "./img/figurine/onepiece/One-piece-Chopper-xs.jpg",
+    },
+    {
+      title: "Figurine Usopp",
+      image: "./img/figurine/onepiece/One-piece-Usopp-xs.jpg",
+    },
+    {
+      title: "Barre Latérale",
+    },
+  ];
+
+  const products2 = [
+    {
+      title: "Figurine Nico Robin",
+      image: "./img/figurine/onepiece/One-piece-Robin-xs.jpg",
+    },
+    {
+      title: "Figurine Nami",
+      image: "./img/figurine/onepiece/One-piece-Nami-xs.jpg",
+    },
+    {
+      title: "Figurine Shank et Luffy",
+      image: "./img/figurine/onepiece/One-piece-Luffy-kid-xs.jpg",
+    },
+    {
+      title: "Figurine Sanji",
+      image: "./img/figurine/onepiece/One-piece-Sanji-xs.jpg",
+    },
+    {
+      title: "Barre Latérale",
+    },
+  ];
+
   return (
-    <div className="body">
+    <div className="account-container">
+      <ProductRow products={products1} />
+      <ProductRow products={products2} />
+    </div>
+
+    /*<div className="content-body">
       <div className="goodies">
         <Row>
           <Col sm={8}>
@@ -105,7 +155,7 @@ function Content() {
           </Col>
         </Row>
       </div>
-    </div>
+    </div>*/
   );
 }
 

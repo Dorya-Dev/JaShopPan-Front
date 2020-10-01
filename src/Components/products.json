@@ -2,102 +2,126 @@
   "manga": [
     {
       "title": "Figurine Luffy",
-      "image": "./img/figurine/onepiece/One-piece-Luffy-xs.jpg"
+      "image": "./img/figurine/onepiece/One-piece-Luffy-xs.jpg",
+      "price": "Prix: 64,99€"
     },
     {
       "title": "Figurine Luffy 20th Anniversary",
-      "image": "./img/figurine/onepiece/One-piece-Luffy-anniv-xs.jpg"
+      "image": "./img/figurine/onepiece/One-piece-Luffy-anniv-xs.jpg",
+      "price": "Prix: 399,99€"
     },
     {
       "title": "Figurine Chopper",
-      "image": "./img/figurine/onepiece/One-piece-Chopper-xs.jpg"
+      "image": "./img/figurine/onepiece/One-piece-Chopper-xs.jpg",
+      "price": "Prix: 79,99€"
     },
     {
       "title": "Figurine Usopp",
-      "image": "./img/figurine/onepiece/One-piece-Usopp-xs.jpg"
+      "image": "./img/figurine/onepiece/One-piece-Usopp-xs.jpg",
+      "price": "Prix: 34,99€"
     },
     {
       "title": "Figurine Nico Robin",
-      "image": "./img/figurine/onepiece/One-piece-Robin-xs.jpg"
+      "image": "./img/figurine/onepiece/One-piece-Robin-xs.jpg",
+      "price": "Prix: 64,99€"
     },
     {
       "title": "Figurine Nami",
-      "image": "./img/figurine/onepiece/One-piece-Nami-xs.jpg"
+      "image": "./img/figurine/onepiece/One-piece-Nami-xs.jpg",
+      "price": "Prix: 44,99€"
     },
     {
       "title": "Figurine Shank et Luffy",
-      "image": "./img/figurine/onepiece/One-piece-Luffy-kid-xs.jpg"
+      "image": "./img/figurine/onepiece/One-piece-Luffy-kid-xs.jpg",
+      "price": "Prix: 74,99€"
     },
     {
       "title": "Figurine Sanji",
-      "image": "./img/figurine/onepiece/One-piece-Sanji-xs.jpg"
+      "image": "./img/figurine/onepiece/One-piece-Sanji-xs.jpg",
+      "price": "Prix: 44,99€"
     },
     {
       "title": "Figurine Goku petit",
-      "image": "./img/figurine/DragonBallZ/Goku-petit-xs.jpg"
+      "image": "./img/figurine/DragonBallZ/Goku-petit-xs.jpg",
+      "price": "Prix: 24,99€"
     },
     {
       "title": "Figurine Freezer Forme Finale",
-      "image": "./img/figurine/DragonBallZ/Freezer-Forme-Finale-xs.jpg"
+      "image": "./img/figurine/DragonBallZ/Freezer-Forme-Finale-xs.jpg",
+      "price": "Prix: 49,99€"
     },
     {
       "title": "Figurine Master Roshi",
-      "image": "./img/figurine/DragonBallZ/Master-Roshi-xs.jpg"
+      "image": "./img/figurine/DragonBallZ/Master-Roshi-xs.jpg",
+      "price": "Prix: 64,99€"
     },
     {
       "title": "Figurine Krilin",
-      "image": "./img/figurine/DragonBallZ/Krilin-xs.jpg"
+      "image": "./img/figurine/DragonBallZ/Krilin-xs.jpg",
+      "price": "Prix: 29,99€"
     }
   ],
 
   "videoGames": [
     {
       "title": "Crash Bandicoot",
-      "image": "./img/figurine/JeuxVideo/crash-bandicoot.jpg"
+      "image": "./img/figurine/JeuxVideo/crash-bandicoot.jpg",
+      "price": "Prix: 74,99€"
     },
     {
       "title": "Street Fighter - Vega",
-      "image": "./img/figurine/JeuxVideo/gouken-street-fighter.jpg"
+      "image": "./img/figurine/JeuxVideo/gouken-street-fighter.jpg",
+      "price": "Prix: 489,99€"
     },
     {
       "title": "The Legend of Zelda - Link",
-      "image": "./img/figurine/JeuxVideo/link-pvc.jpg"
+      "image": "./img/figurine/JeuxVideo/link-pvc.jpg",
+      "price": "Prix: 74,99€"
     },
     {
       "title": "Sonic The Edgehog - ",
-      "image": "./img/figurine/JeuxVideo/Drake.jpg"
+      "image": "./img/figurine/JeuxVideo/Drake.jpg",
+      "price": "Prix: 79,99€"
     },
     {
       "title": "Assassin's Creed II - Ezio Auditore",
-      "image": "./img/figurine/JeuxVideo/ezio-auditore.jpg"
+      "image": "./img/figurine/JeuxVideo/ezio-auditore.jpg",
+      "price": "Prix: 129,99€"
     },
     {
       "title": "Deus Ex Mankind Divided - Adam Jensen",
-      "image": "./img/figurine/JeuxVideo/deus-ex.jpg"
+      "image": "./img/figurine/JeuxVideo/deus-ex.jpg",
+      "price": "Prix: 54,99€"
     },
     {
       "title": "Devil May Cry 5 - Nero",
-      "image": "./img/figurine/JeuxVideo/devil-may-cry-5.jpg"
+      "image": "./img/figurine/JeuxVideo/devil-may-cry-5.jpg",
+      "price": "Prix: 279,99€"
     },
     {
       "title": "Uncharted 4 - Drake",
-      "image": "./img/figurine/JeuxVideo/Drake.jpg"
+      "image": "./img/figurine/JeuxVideo/Drake.jpg",
+      "price": "Prix: 49,99€"
     },
     {
       "title": "",
-      "image": "./img/figurine/DragonBallZ/Goku-petit-xs.jpg"
+      "image": "./img/figurine/DragonBallZ/Goku-petit-xs.jpg",
+      "price": "Prix: 64,99€"
     },
     {
       "title": "Figurine ",
-      "image": "./img/figurine/DragonBallZ/Freezer-Forme-Finale-xs.jpg"
+      "image": "./img/figurine/DragonBallZ/Freezer-Forme-Finale-xs.jpg",
+      "price": "Prix:64.99€"
     },
     {
       "title": "Figurine Master Roshi",
-      "image": "./img/figurine/DragonBallZ/Master-Roshi-xs.jpg"
+      "image": "./img/figurine/DragonBallZ/Master-Roshi-xs.jpg",
+      "price": "Prix:64.99€"
     },
     {
       "title": "Figurine Krilin",
-      "image": "./img/figurine/DragonBallZ/Krilin-xs.jpg"
+      "image": "./img/figurine/DragonBallZ/Krilin-xs.jpg",
+      "price": "Prix:64.99€"
     }
   ]
 }

@@ -9,8 +9,9 @@ function ProductRow(props) {
     props.products.forEach((product, index) => {
       productsJSX.push(
         <Col className="product-row-col">
-          <p>{product.title}</p>
           <img src={product.image} />
+          <p>{product.title}</p>
+          <p>{product.price}</p>
         </Col>
       );
     });

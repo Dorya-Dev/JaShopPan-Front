@@ -42,9 +42,11 @@ function Accueil() {
               <h2>Figurines Mangas</h2>
               <hr />
               <ProductRow products={Mangas} />
+              <br />
               <h2>Figurines Jeux Vidéo</h2>
               <hr />
               <ProductRow products={JeuxVideo} />
+              <br />
               <h2>Goodies</h2>
               <hr />
             </div>

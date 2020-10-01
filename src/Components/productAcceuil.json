@@ -1,0 +1,46 @@
+{
+  "Mangas": [
+    {
+      "image": "./img/figurine/onepiece/One-piece-Luffy-xs.jpg",
+      "title": "Figurine Luffy",
+      "price": "Prix: 64,99€"
+    },
+    {
+      "image": "./img/figurine/onepiece/One-piece-Luffy-anniv-xs.jpg",
+      "title": "Figurine Luffy 20th Anniversary",
+      "price": "Prix: 399,99€"
+    },
+    {
+      "image": "./img/figurine/onepiece/One-piece-Chopper-xs.jpg",
+      "title": "Figurine Chopper",
+      "price": "Prix: 79,99€"
+    },
+    {
+      "image": "./img/figurine/onepiece/One-piece-Usopp-xs.jpg",
+      "title": "Figurine Usopp",
+      "price": "Prix: 34,99€"
+    }
+  ],
+  "JeuxVideo": [
+    {
+      "image": "./img/figurine/JeuxVideo/crash-bandicoot.jpg",
+      "title": "Crash Bandicoot",
+      "price": "Prix: 74,99€"
+    },
+    {
+      "image": "./img/figurine/JeuxVideo/gouken-street-fighter.jpg",
+      "title": "Street Fighter - Vega",
+      "price": "Prix: 489,99€"
+    },
+    {
+      "image": "./img/figurine/JeuxVideo/link-pvc.jpg",
+      "title": "The Legend of Zelda - Link",
+      "price": "Prix: 74,99€"
+    },
+    {
+      "image": "./img/figurine/JeuxVideo/Drake.jpg",
+      "title": "Sonic The Edgehog - ",
+      "price": "Prix: 49,99€"
+    }
+  ]
+}

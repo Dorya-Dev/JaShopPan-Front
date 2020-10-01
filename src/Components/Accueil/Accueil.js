@@ -1,6 +1,8 @@
 import React from "react";
 import "./accueil.css";
 import { Col, Row, Carousel, Container } from "react-bootstrap";
+import { Mangas, JeuxVideo } from "../productAcceuil.json";
+import ProductRow from "../../assets/Components/ProductRow/ProductRow";
 
 function Accueil() {
   return (
@@ -39,56 +41,14 @@ function Accueil() {
             <div className="middle">
               <h2>Figurines Mangas</h2>
               <hr />
-              <Row>
-                <Col>
-                  <img src="./img/figurine/onepiece/One-piece-Chopper-xs.jpg" />
-                  <title>Chopper</title>
-                  <title>Prix:*****</title>
-                </Col>
-                <Col>
-                  <img src="./img/figurine/onepiece/One-piece-Sanji-xs.jpg" />
-                  <title>Usopp</title>
-                  <title>Prix:*****</title>
-                </Col>
-                <Col>
-                  <img src="Skateboard-xs.jpg" />
-                </Col>
-                <Col>
-                  <img src="Skateboard-xs.jpg" />
-                </Col>
-              </Row>
-              <h2>Figurines Jeux Vidéos</h2>
+              <ProductRow products={Mangas} />
+              <br />
+              <h2>Figurines Jeux Vidéo</h2>
               <hr />
-              <Row>
-                <Col>
-                  <img src="Skateboard-xs.jpg" />
-                </Col>
-                <Col>
-                  <img src="Skateboard-xs.jpg" />
-                </Col>
-                <Col>
-                  <img src="Skateboard-xs.jpg" />
-                </Col>
-                <Col>
-                  <img src="Skateboard-xs.jpg" />
-                </Col>
-              </Row>
+              <ProductRow products={JeuxVideo} />
+              <br />
               <h2>Goodies</h2>
               <hr />
-              <Row>
-                <Col>
-                  <img src="Skateboard-xs.jpg" />
-                </Col>
-                <Col>
-                  <img src="Skateboard-xs.jpg" />
-                </Col>
-                <Col>
-                  <img src="Skateboard-xs.jpg" />
-                </Col>
-                <Col>
-                  <img src="Skateboard-xs.jpg" />
-                </Col>
-              </Row>
             </div>
           </Col>
           <Col xl={2} lg={4}>

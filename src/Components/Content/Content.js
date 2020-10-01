@@ -2,9 +2,9 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./content.css";
-import ProductRow from "./ProductRow";
+import ProductRow from "../../assets/Components/ProductRow/ProductRow";
 import { manga, videoGames, goodies } from "../products.json";
-import Sidebar from "./Sidebar";
+import Sidebar from "../../assets/Components/Sidebar/Sidebar";
 
 function Content() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./accueil.css";
 import { Col, Row, Carousel, Container } from "react-bootstrap";
-import { Mangas, JeuxVideo } from "../productAcceuil.json";
+import { Mangas, JeuxVideo, Goodies } from "../productAcceuil.json";
 import ProductRow from "../../assets/Components/ProductRow/ProductRow";
 
 function Accueil() {
@@ -35,6 +35,7 @@ function Accueil() {
               <br />
               <h2>Goodies</h2>
               <hr />
+              <ProductRow products={Goodies} />
             </div>
           </Col>
           <Col xl={2} lg={4}>

@@ -1,8 +1,8 @@
 .content {
   background-color: gray;
   width: 100%;
-  margin: auto;
-  height: calc(100vh - 168px);
+  margin-top: -50px;
+  height: calc(100vh - 188px);
   overflow: hidden;
 }
 .content img {
@@ -15,8 +15,9 @@
 }
 .middle {
   margin: left 15px;
-  border: rgb(41, 38, 38) solid;
+  border: rgb(53, 48, 48) solid;
   border-radius: 10px;
+  padding: 40px;
 }
 .Toptendance {
   background-color: rgb(138, 79, 79);

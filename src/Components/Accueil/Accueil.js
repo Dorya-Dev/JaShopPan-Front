@@ -7,33 +7,19 @@ import ProductRow from "../../assets/Components/ProductRow/ProductRow";
 function Accueil() {
   return (
     <section className="test">
-      <Carousel className="content">
-        <Carousel.Item>
-          <img
-            className="Link"
-            src="Link.jpg"
-            alt="First slide"
-            height="400"
-            width="900"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="nintendo"
-            src="nintendo.jpg"
-            alt="Third slide"
-            height="400"
-            width="900"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-      </Carousel>
+      <div className="essai">
+        <Carousel className="content">
+          <Carousel.Item>
+            <img className="d-block w-100" src="allmangas.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="nero.jpg" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="smash-bros.jpg" />
+          </Carousel.Item>
+        </Carousel>
+      </div>
       <br />
       <div className="home-container">
         <Row>

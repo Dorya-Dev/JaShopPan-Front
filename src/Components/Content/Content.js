@@ -3,7 +3,8 @@ import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./content.css";
 import ProductRow from "./ProductRow";
-import { manga, videoGames } from "../products.json";
+import { manga, videoGames, goodies } from "../products.json";
+import Sidebar from "./Sidebar";
 
 function Content() {
   return (
@@ -16,9 +17,16 @@ function Content() {
           <h2>Catégorie Jeux Vidéo</h2>
           <ProductRow products={videoGames} />
           <h2>Catégorie Goodies</h2>
+          <ProductRow products={goodies} />
         </Col>
         <Col sm={4} lg={2}>
-          <div>ff</div>
+          <div className="sidebar">
+            <Sidebar
+              category1={manga}
+              category2={videoGames}
+              category3={goodies}
+            />
+          </div>
         </Col>
       </Row>
     </div>

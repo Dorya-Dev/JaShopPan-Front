@@ -2,51 +2,51 @@
   "manga": [
     {
       "title": "Figurine Luffy",
-      "image": "./img/figurine/onepiece/One-piece-Luffy-xs.jpg"
+      "image": "./img/figurine/Manga/One-piece-Luffy-xs.jpg"
     },
     {
       "title": "Figurine Luffy 20th Anniversary",
-      "image": "./img/figurine/onepiece/One-piece-Luffy-anniv-xs.jpg"
+      "image": "./img/figurine/Manga/One-piece-Luffy-anniv-xs.jpg"
     },
     {
       "title": "Figurine Chopper",
-      "image": "./img/figurine/onepiece/One-piece-Chopper-xs.jpg"
+      "image": "./img/figurine/Manga/One-piece-Chopper-xs.jpg"
     },
     {
       "title": "Figurine Usopp",
-      "image": "./img/figurine/onepiece/One-piece-Usopp-xs.jpg"
+      "image": "./img/figurine/Manga/One-piece-Usopp-xs.jpg"
     },
     {
       "title": "Figurine Nico Robin",
-      "image": "./img/figurine/onepiece/One-piece-Robin-xs.jpg"
+      "image": "./img/figurine/Manga/One-piece-Robin-xs.jpg"
     },
     {
       "title": "Figurine Nami",
-      "image": "./img/figurine/onepiece/One-piece-Nami-xs.jpg"
+      "image": "./img/figurine/Manga/One-piece-Nami-xs.jpg"
     },
     {
       "title": "Figurine Shank et Luffy",
-      "image": "./img/figurine/onepiece/One-piece-Luffy-kid-xs.jpg"
+      "image": "./img/figurine/Manga/One-piece-Luffy-kid-xs.jpg"
     },
     {
       "title": "Figurine Sanji",
-      "image": "./img/figurine/onepiece/One-piece-Sanji-xs.jpg"
+      "image": "./img/figurine/Manga/One-piece-Sanji-xs.jpg"
     },
     {
       "title": "Figurine Goku petit",
-      "image": "./img/figurine/DragonBallZ/Goku-petit-xs.jpg"
+      "image": "./img/figurine/Manga/Goku-petit-xs.jpg"
     },
     {
       "title": "Figurine Freezer Forme Finale",
-      "image": "./img/figurine/DragonBallZ/Freezer-Forme-Finale-xs.jpg"
+      "image": "./img/figurine/Manga/Freezer-Forme-Finale-xs.jpg"
     },
     {
       "title": "Figurine Master Roshi",
-      "image": "./img/figurine/DragonBallZ/Master-Roshi-xs.jpg"
+      "image": "./img/figurine/Manga/Master-Roshi-xs.jpg"
     },
     {
       "title": "Figurine Krilin",
-      "image": "./img/figurine/DragonBallZ/Krilin-xs.jpg"
+      "image": "./img/figurine/Manga/Krilin-xs.jpg"
     }
   ],
 
@@ -98,6 +98,17 @@
     {
       "title": "Figurine Krilin",
       "image": "./img/figurine/DragonBallZ/Krilin-xs.jpg"
+    }
+  ],
+
+  "goodies": [
+    {
+      "title": "One Piece Mug",
+      "image": "/img/goodies/One-piece-mug-xs.jpg"
+    },
+    {
+      "title": "One Piece Mug",
+      "image": "/img/goodies/One-piece-mug-xs.jpg"
     }
   ]
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./content.css";
-import ProductRow from "./ProductRow";
+import ProductRow from "../../assets/Components/ProductRow/ProductRow";
 import { manga, videoGames } from "../products.json";
 
 function Content() {

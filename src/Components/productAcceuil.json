@@ -1,0 +1,38 @@
+{
+  "Mangas": [
+    {
+      "title": "Figurine Luffy",
+      "image": "./img/figurine/onepiece/One-piece-Luffy-xs.jpg"
+    },
+    {
+      "title": "Figurine Luffy 20th Anniversary",
+      "image": "./img/figurine/onepiece/One-piece-Luffy-anniv-xs.jpg"
+    },
+    {
+      "title": "Figurine Chopper",
+      "image": "./img/figurine/onepiece/One-piece-Chopper-xs.jpg"
+    },
+    {
+      "title": "Figurine Usopp",
+      "image": "./img/figurine/onepiece/One-piece-Usopp-xs.jpg"
+    }
+  ],
+  "JeuxVideo": [
+    {
+      "title": "Crash Bandicoot",
+      "image": "./img/figurine/JeuxVideo/crash-bandicoot.jpg"
+    },
+    {
+      "title": "Street Fighter - Vega",
+      "image": "./img/figurine/JeuxVideo/gouken-street-fighter.jpg"
+    },
+    {
+      "title": "The Legend of Zelda - Link",
+      "image": "./img/figurine/JeuxVideo/link-pvc.jpg"
+    },
+    {
+      "title": "Sonic The Edgehog - ",
+      "image": "./img/figurine/JeuxVideo/Drake.jpg"
+    }
+  ]
+}

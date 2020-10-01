@@ -8,6 +8,7 @@ import Nav from "react-bootstrap/Nav";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { IoIosHome } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Header() {
   function connect() {
@@ -45,6 +46,10 @@ function Header() {
             </Link>
           </Nav>
         </Navbar>
+        {/* nav mobile*/}
+        <nav className="header-nav-mob">
+          <GiHamburgerMenu />
+        </nav>
       </div>
       <Form inline>
         <FormControl type="text" placeholder="Rechercher" className="mr-sm-2" />

@@ -35,3 +35,24 @@
   font-size: 30px;
   vertical-align: sub;
 }
+.header-nav-mob {
+  display: none;
+}
+@media screen and (min-width: 641px) and (max-width: 900px) {
+  .Top {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .navbar-dark .navbar-nav .nav-link {
+    display: none;
+  }
+  .header-nav-mob {
+    text-align: right;
+    font-size: 50px;
+    color: white;
+  }
+  .Top {
+    width: 100%;
+  }
+}

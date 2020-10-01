@@ -1,0 +1,103 @@
+{
+  "manga": [
+    {
+      "title": "Figurine Luffy",
+      "image": "./img/figurine/onepiece/One-piece-Luffy-xs.jpg"
+    },
+    {
+      "title": "Figurine Luffy 20th Anniversary",
+      "image": "./img/figurine/onepiece/One-piece-Luffy-anniv-xs.jpg"
+    },
+    {
+      "title": "Figurine Chopper",
+      "image": "./img/figurine/onepiece/One-piece-Chopper-xs.jpg"
+    },
+    {
+      "title": "Figurine Usopp",
+      "image": "./img/figurine/onepiece/One-piece-Usopp-xs.jpg"
+    },
+    {
+      "title": "Figurine Nico Robin",
+      "image": "./img/figurine/onepiece/One-piece-Robin-xs.jpg"
+    },
+    {
+      "title": "Figurine Nami",
+      "image": "./img/figurine/onepiece/One-piece-Nami-xs.jpg"
+    },
+    {
+      "title": "Figurine Shank et Luffy",
+      "image": "./img/figurine/onepiece/One-piece-Luffy-kid-xs.jpg"
+    },
+    {
+      "title": "Figurine Sanji",
+      "image": "./img/figurine/onepiece/One-piece-Sanji-xs.jpg"
+    },
+    {
+      "title": "Figurine Goku petit",
+      "image": "./img/figurine/DragonBallZ/Goku-petit-xs.jpg"
+    },
+    {
+      "title": "Figurine Freezer Forme Finale",
+      "image": "./img/figurine/DragonBallZ/Freezer-Forme-Finale-xs.jpg"
+    },
+    {
+      "title": "Figurine Master Roshi",
+      "image": "./img/figurine/DragonBallZ/Master-Roshi-xs.jpg"
+    },
+    {
+      "title": "Figurine Krilin",
+      "image": "./img/figurine/DragonBallZ/Krilin-xs.jpg"
+    }
+  ],
+
+  "videoGames": [
+    {
+      "title": "Crash Bandicoot",
+      "image": "./img/figurine/JeuxVideo/crash-bandicoot.jpg"
+    },
+    {
+      "title": "Street Fighter - Vega",
+      "image": "./img/figurine/JeuxVideo/gouken-street-fighter.jpg"
+    },
+    {
+      "title": "The Legend of Zelda - Link",
+      "image": "./img/figurine/JeuxVideo/link-pvc.jpg"
+    },
+    {
+      "title": "Sonic The Edgehog - ",
+      "image": "./img/figurine/JeuxVideo/Drake.jpg"
+    },
+    {
+      "title": "Assassin's Creed II - Ezio Auditore",
+      "image": "./img/figurine/JeuxVideo/ezio-auditore.jpg"
+    },
+    {
+      "title": "Deus Ex Mankind Divided - Adam Jensen",
+      "image": "./img/figurine/JeuxVideo/deus-ex.jpg"
+    },
+    {
+      "title": "Devil May Cry 5 - Nero",
+      "image": "./img/figurine/JeuxVideo/devil-may-cry-5.jpg"
+    },
+    {
+      "title": "Uncharted 4 - Drake",
+      "image": "./img/figurine/JeuxVideo/Drake.jpg"
+    },
+    {
+      "title": "",
+      "image": "./img/figurine/DragonBallZ/Goku-petit-xs.jpg"
+    },
+    {
+      "title": "Figurine ",
+      "image": "./img/figurine/DragonBallZ/Freezer-Forme-Finale-xs.jpg"
+    },
+    {
+      "title": "Figurine Master Roshi",
+      "image": "./img/figurine/DragonBallZ/Master-Roshi-xs.jpg"
+    },
+    {
+      "title": "Figurine Krilin",
+      "image": "./img/figurine/DragonBallZ/Krilin-xs.jpg"
+    }
+  ]
+}

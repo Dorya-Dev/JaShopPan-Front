@@ -10,6 +10,22 @@ import { IoIosHome } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 function Header() {
+  function connect() {
+    let nom = localStorage.getItem("compte");
+    if (nom) {
+      return (
+        <Link className="nav-link" to="/moncompte">
+          Mon compte
+        </Link>
+      );
+    } else {
+      return (
+        <Link className="nav-link" to="/account">
+          Se connecter
+        </Link>
+      );
+    }
+  }
   return (
     <header className="header">
       <div className="Top">
@@ -23,10 +39,8 @@ function Header() {
               <span> </span>
               Accueil
             </Link>
-            <Link className="nav-link" to="/account">
-              Se connecter
-            </Link>
-            <Link className="nav-link" to="/">
+            {connect()}
+            <Link className="nav-link" to="/cart">
               Panier <span> </span> <RiShoppingCart2Line />
             </Link>
           </Nav>

@@ -1,0 +1,47 @@
+.moncompte-array {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin: 50px;
+}
+.moncompte-body {
+  min-height: calc(100vh - 168px);
+  text-align: center;
+  width: 60%;
+  margin: 30px auto;
+  background-color: #343a40;
+  border: 1px black solid;
+  border-radius: 10px;
+}
+.moncompte-body button {
+  font-size: 20px;
+  color: white;
+  float: right;
+  margin: 30px 30px;
+  padding: 4px;
+  background-color: #343a40;
+  border: solid #17a2b8 2px;
+  border-radius: 10px;
+}
+.moncompte-body button:hover {
+  font-size: 20px;
+  color: #17a2b8;
+  float: right;
+  margin: 30px 30px;
+  border-radius: 10px;
+  padding: 4px;
+  border: solid #17a2b8 2px;
+  background-color: #343a40;
+}
+.simg {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+.mon-compte-row {
+  margin: 100px 0px;
+}
+.mon-compte-col {
+  text-align: left;
+  padding: 10px;
+}

@@ -8,6 +8,7 @@ import Accueil from "./Components/Accueil/Accueil";
 import Content from "./Components/Content/Content";
 import Footer from "./Components/Footer/Footer";
 import Products from "./Components/Products/Products";
+import Moncompte from "./Components/Moncompte/Moncompte";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -16,12 +17,10 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route path="/account" exact>
-          <Account email={"test@test.fr"} password={"1234"} />
-        </Route>
-
+        <Route path="/account" component={Account} exact />
+        <Route path="/moncompte" component={Moncompte} exact />
         <Route path="/cart" component={Cart} exact />
-        <Accueil />
+        <Route path="/" component={Accueil} exact />
         <Route path="/content" component={Content} exact />
         <Route path="/products" component={Products} exact />
       </Switch>

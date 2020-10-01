@@ -6,18 +6,10 @@ function Footer() {
   return (
     <div className="footer">
       <div>
-        <Link>
-          <a to="/"> Conditions générales de vente </a>
-        </Link>
-        <Link>
-          <a to="/"> Vos informations personnelles </a>
-        </Link>
-        <Link>
-          <a to="/"> Cookies </a>
-        </Link>
-        <Link>
-          <a to="/"> Annonces basées sur vos centres d’intérêt </a>
-        </Link>
+        <Link to="/"> Conditions générales de vente </Link>
+        <Link to="/"> Vos informations personnelles </Link>
+        <Link to="/"> Cookies </Link>
+        <Link to="/"> Annonces basées sur vos centres d’intérêt </Link>
       </div>
       <p>&copy; 1996-2020, JaShopPan.com</p>
     </div>

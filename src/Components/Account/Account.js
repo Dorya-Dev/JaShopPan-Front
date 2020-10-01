@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { RiPictureInPictureLine } from "react-icons/ri";
 import "./account.css";
+import { useHistory } from "react-router-dom";
 
 function Account(props) {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [display, setDisplay] = useState("");
+  const history = useHistory();
 
   const handleLogin = (e) => {
     setLogin(e.target.value);
@@ -16,9 +17,11 @@ function Account(props) {
   };
 
   function SignIn() {
-    if (password === props.password && login === props.email) {
+    if (password === "1234" && login === "test@test.fr") {
       setDisplay("Vous êtes connectés");
       console.log("log in success");
+      history.push("/moncompte");
+      localStorage.setItem("compte", "test@test.fr");
     } else {
       setPassword("");
       setDisplay("Mauvais mot de passe ou email");
@@ -26,11 +29,11 @@ function Account(props) {
     }
   }
   return (
-    <div className="body">
-      <div class="border">
-        <h1 data-shadow="dang!">Connexion</h1>
-        <div className="contenair">
-          <div class="label">
+    <div className="account-body">
+      <div className="border">
+        <h1>Connexion</h1>
+        <div>
+          <div className="label">
             <label>Email :</label>
             <br />
             <input
@@ -43,7 +46,7 @@ function Account(props) {
           </div>
         </div>
         <div className="container">
-          <div class="input">
+          <div className="input">
             <label>Mot de passe :</label>
             <br />
             <input
@@ -56,11 +59,11 @@ function Account(props) {
           </div>
         </div>
         <div className="button">
-          <button className="text" onClick={SignIn} data-shadow="dang!">
-            Log In
+          <button className="text" onClick={SignIn}>
+            Se connecter
           </button>
           <div>
-            <span class="return">{display}</span>
+            <span className="return">{display}</span>
           </div>
         </div>
       </div>

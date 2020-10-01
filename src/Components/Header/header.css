@@ -13,7 +13,7 @@
   font-size: 25px;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #17a2b8 !important;
+  color: #17a2b8;
   font-size: 25px;
   border: solid 1px #17a2b8;
   border-radius: 10px;
@@ -25,6 +25,8 @@
 }
 .form-inline {
   justify-content: center;
+  padding: 10px 0px;
+  background-color: #464646;
 }
 .Menu {
   justify-content: right !important;

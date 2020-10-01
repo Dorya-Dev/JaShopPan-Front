@@ -12,7 +12,7 @@
   width: 70%;
   margin: 30px auto;
   background-color: #343a40;
-  border: 1px black solid;
+  border: 1px transparent solid;
   border-radius: 10px;
 }
 .moncompte-body button {
@@ -61,4 +61,16 @@ label:hover {
   color: #17a2b8;
   font-family: "Righteous", serif;
   margin: 20px;
+  margin-bottom: 50px;
+}
+.moncompt-contact p {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 40%;
+}
+.fcicone {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }

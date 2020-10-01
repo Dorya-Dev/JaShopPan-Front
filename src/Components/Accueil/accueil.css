@@ -1,18 +1,22 @@
 .content {
   background-color: gray;
-  height: 400px;
-  width: 900px;
+  width: 100%;
   margin: auto;
+  height: calc(100vh - 168px);
+  overflow: hidden;
 }
 .content img {
-  max-height: 400px;
+  background-size: cover;
+  background-position: center;
 }
+
 .home-container {
   margin: 100px;
 }
 .middle {
   margin: left 15px;
-  background-color: rgb(112, 107, 99);
+  border: rgb(41, 38, 38) solid;
+  border-radius: 10px;
 }
 .Toptendance {
   background-color: rgb(138, 79, 79);

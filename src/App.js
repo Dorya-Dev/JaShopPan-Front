@@ -16,14 +16,16 @@ function App() {
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route path="/account" component={Account} exact />
-        <Route path="/moncompte" component={Moncompte} exact />
-        <Route path="/cart" component={Cart} exact />
-        <Route path="/" component={Accueil} exact />
-        <Route path="/content" component={Content} exact />
-        <Route path="/products" component={Products} exact />
-      </Switch>
+      <div className="main-content">
+        <Switch>
+          <Route path="/account" component={Account} exact />
+          <Route path="/moncompte" component={Moncompte} exact />
+          <Route path="/cart" component={Cart} exact />
+          <Route path="/" component={Accueil} exact />
+          <Route path="/content" component={Content} exact />
+          <Route path="/products" component={Products} exact />
+        </Switch>
+      </div>
       <Footer />
     </Router>
   );

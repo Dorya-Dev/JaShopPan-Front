@@ -23,22 +23,22 @@
   ],
   "JeuxVideo": [
     {
-      "image": "./img/figurine/JeuxVideo/crash-bandicoot.jpg",
+      "image": "./img/figurine/JeuxVideo/crash-bandicoot-xs.jpg",
       "title": "Crash Bandicoot",
       "price": "Prix: 74,99€"
     },
     {
-      "image": "./img/figurine/JeuxVideo/gouken-street-fighter.jpg",
+      "image": "./img/figurine/JeuxVideo/gouken-street-fighter-xs.jpg",
       "title": "Street Fighter - Vega",
       "price": "Prix: 489,99€"
     },
     {
-      "image": "./img/figurine/JeuxVideo/link-pvc.jpg",
+      "image": "./img/figurine/JeuxVideo/link-pvc-xs.jpg",
       "title": "The Legend of Zelda - Link",
       "price": "Prix: 74,99€"
     },
     {
-      "image": "./img/figurine/JeuxVideo/Drake.jpg",
+      "image": "./img/figurine/JeuxVideo/Drake-xs.jpg",
       "title": "Sonic The Edgehog - ",
       "price": "Prix: 49,99€"
     }

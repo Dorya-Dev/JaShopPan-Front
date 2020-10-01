@@ -41,10 +41,14 @@ function Accueil() {
               <hr />
               <Row>
                 <Col>
-                  <img src="Skateboard-xs.jpg" />
+                  <img src="./img/figurine/onepiece/One-piece-Chopper-xs.jpg" />
+                  <title>Chopper</title>
+                  <title>Prix:*****</title>
                 </Col>
                 <Col>
-                  <img src="Skateboard-xs.jpg" />
+                  <img src="./img/figurine/onepiece/One-piece-Sanji-xs.jpg" />
+                  <title>Usopp</title>
+                  <title>Prix:*****</title>
                 </Col>
                 <Col>
                   <img src="Skateboard-xs.jpg" />

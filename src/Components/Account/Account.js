@@ -7,14 +7,27 @@ function Account(props) {
   const [password, setPassword] = useState("");
   const [display, setDisplay] = useState("");
   const history = useHistory();
+  const [newLogin, setNewLogin] = useState([]);
+  const [newPassword, setNewPassword] = useState([]);
 
   const handleLogin = (e) => {
     setLogin(e.target.value);
   };
-
   const handlePassword = (e) => {
     setPassword(e.target.value);
   };
+
+  const newHandleLogin = (e) => {
+    setNewLogin(e.target.value);
+  };
+  const newHandlePassword = (e) => {
+    setNewPassword(e.target.value);
+  };
+
+  function Register() {
+    localStorage.setItem("newlog", newLogin);
+    localStorage.setItem("newpass", newPassword);
+  }
 
   function SignIn() {
     if (password === "1234" && login === "test@test.fr") {
@@ -59,11 +72,45 @@ function Account(props) {
           </div>
         </div>
         <div className="button">
-          <button className="text" onClick={SignIn}>
-            Se connecter
-          </button>
+          <button onClick={SignIn}>Se connecter</button>
           <div>
             <span className="return">{display}</span>
+          </div>
+        </div>
+        <div className="account-separator">
+          <h1>Créer</h1>
+          <p>Votre nouveau compte gratuit</p>
+          <div>
+            <div className="label">
+              <label>Nouvel email :</label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                placeholder="Saisir votre email"
+                onChange={newHandleLogin}
+                value={newLogin}
+              ></input>
+            </div>
+          </div>
+          <div className="container">
+            <div className="input">
+              <label>Nouveau mot de passe :</label>
+              <br />
+              <input
+                type="password"
+                id="password"
+                placeholder="Saisir votre password"
+                onChange={newHandlePassword}
+                value={newPassword}
+              ></input>
+            </div>
+          </div>
+          <div className="button">
+            <button onClick={Register}>S'inscrire</button>
+            <div>
+              <span className="return">{display}</span>
+            </div>
           </div>
         </div>
       </div>

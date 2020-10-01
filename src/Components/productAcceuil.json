@@ -1,22 +1,22 @@
 {
   "Mangas": [
     {
-      "image": "./img/figurine/onepiece/One-piece-Luffy-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Luffy-xs.jpg",
       "title": "Figurine Luffy",
       "price": "Prix: 64,99€"
     },
     {
-      "image": "./img/figurine/onepiece/One-piece-Luffy-anniv-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Luffy-anniv-xs.jpg",
       "title": "Figurine Luffy 20th Anniversary",
       "price": "Prix: 399,99€"
     },
     {
-      "image": "./img/figurine/onepiece/One-piece-Chopper-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Chopper-xs.jpg",
       "title": "Figurine Chopper",
       "price": "Prix: 79,99€"
     },
     {
-      "image": "./img/figurine/onepiece/One-piece-Usopp-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Usopp-xs.jpg",
       "title": "Figurine Usopp",
       "price": "Prix: 34,99€"
     }
@@ -41,6 +41,31 @@
       "image": "./img/figurine/JeuxVideo/Drake-xs.jpg",
       "title": "Sonic The Edgehog - ",
       "price": "Prix: 49,99€"
+    }
+  ],
+  "Goodies": [
+    {
+      "image": "./img/Goodies/One-piece-mug-xs.jpg",
+      "title": "Mug Chopper",
+      "price": "Prix: 14,99€"
+    },
+
+    {
+      "image": "./img/Goodies/One-piece-porte-cles-Luffy-xs.jpg",
+      "title": "porte-clé Luffy",
+      "price": "Prix: 9,99€"
+    },
+
+    {
+      "image": "./img/Goodies/One-piece-porte-cles-xs.jpg",
+      "title": "porte-clé Chopper",
+      "price": "Prix: 9,99€"
+    },
+
+    {
+      "image": "./img/Goodies/One-piece-tapis-souris-xs.jpg",
+      "title": "Tapis de souris One Piece",
+      "price": "Prix: 19,99€"
     }
   ]
 }

@@ -67,5 +67,24 @@
       "title": "Tapis de souris One Piece",
       "price": "Prix: 19,99€"
     }
+  ],
+
+  "Toptendance": [
+    {
+      "image": "./img/Goodies/One-piece-mug-xs.jpg",
+      "title": "Mug Chopper"
+    },
+    {
+      "image": "./img/figurine/Manga/Piccolo-Daimao-xs.jpg",
+      "title": "Piccolo-DBZ"
+    },
+    {
+      "image": "./img/figurine/JeuxVideo/Okami-xs.jpg",
+      "title": "Okami"
+    },
+    {
+      "image": "./img/figurine/JeuxVideo/the-last-of-us-2-xs.jpg",
+      "title": "Statue Ellie"
+    }
   ]
 }

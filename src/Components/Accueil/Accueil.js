@@ -1,8 +1,14 @@
 import React from "react";
 import "./accueil.css";
 import { Col, Row, Carousel, Container } from "react-bootstrap";
-import { Mangas, JeuxVideo, Goodies } from "../productAcceuil.json";
+import {
+  Mangas,
+  JeuxVideo,
+  Goodies,
+  Toptendance,
+} from "../productAcceuil.json";
 import ProductRow from "../../assets/Components/ProductRow/ProductRow";
+import { AiFillFire } from "react-icons/ai";
 
 function Accueil() {
   return (
@@ -23,7 +29,7 @@ function Accueil() {
       <br />
       <div className="home-container">
         <Row>
-          <Col xl={10} lg={8}>
+          <Col xl={9} lg={11}>
             <div className="middle">
               <h2>Figurines Mangas</h2>
               <hr />
@@ -38,25 +44,21 @@ function Accueil() {
               <ProductRow products={Goodies} />
             </div>
           </Col>
-          <Col xl={2} lg={4}>
+          <Col xl={3} lg={1}>
             <div className="Toptendance">
-              <Col>
-                <img src="Skateboard-xs.jpg" />
-              </Col>
-              <Col>
-                <img src="Skateboard-xs.jpg" />
-              </Col>
-              <Col>
-                <img src="Skateboard-xs.jpg" />
-              </Col>
-              <Col>
-                <img src="Skateboard-xs.jpg" />
-              </Col>
+              <h2>
+                <AiFillFire />
+                Top Tendance
+                <AiFillFire />
+              </h2>
+
+              <hr />
+
+              <ProductRow products={Toptendance} />
             </div>
           </Col>
         </Row>
       </div>
-      <br />
     </section>
   );
 }

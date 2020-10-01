@@ -48,7 +48,22 @@ function Header() {
         </Navbar>
         {/* nav mobile*/}
         <nav className="header-nav-mob">
-          <GiHamburgerMenu />
+          <div className="navmob">
+            <div className="dropdown">
+              <GiHamburgerMenu />
+              <div className="dropdown-content">
+                <Link className="nav-link" to="/">
+                  <IoIosHome />
+                  <span> </span>
+                  Accueil
+                </Link>
+                {connect()}
+                <Link className="nav-link" to="/cart">
+                  Panier <span> </span> <RiShoppingCart2Line />
+                </Link>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
       <Form inline>

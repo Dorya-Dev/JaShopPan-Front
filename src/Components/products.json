@@ -1,6 +1,7 @@
 {
   "manga": [
     {
+      "id": "figurine-luffy",
       "title": "Figurine Luffy",
       "image": "./img/figurine/Manga/One-piece-Luffy-xs.jpg",
       "price": "Prix: 64,99€"
@@ -109,6 +110,7 @@
       "price": "Prix: 64,99€"
     },
     {
+      "id": "okami",
       "title": "First For Figures - Okami",
       "image": "./img/figurine/JeuxVideo/okami-xs.jpg",
       "price": "Prix:64.99€"

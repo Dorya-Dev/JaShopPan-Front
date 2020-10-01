@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./productrow.css";
 
 function ProductRow(props) {
@@ -9,9 +10,11 @@ function ProductRow(props) {
     props.products.forEach((product, index) => {
       productsJSX.push(
         <Col className="product-row-col">
-          <img src={product.image} />
-          <p>{product.title}</p>
-          <p>{product.price}</p>
+          <Link to={"/product?id=" + product.id}>
+            <img src={product.image} />
+            <p>{product.title}</p>
+            <p>{product.price}</p>
+          </Link>
         </Col>
       );
     });

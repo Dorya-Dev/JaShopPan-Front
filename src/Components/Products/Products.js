@@ -1,17 +1,18 @@
 import React from "react";
 import "./products.css";
+import { useLocation } from "react-router-dom";
+import { manga } from "../products.json";
 
 function Products() {
+  const query = new URLSearchParams(useLocation().search);
+  const id = query.get("id");
+  const product = manga.find((value) => value.id === id);
   return (
     <div className="products">
-      <img
-        className="one-piece-mug"
-        src=".\img\Goodies\One-piece-mug.jpg"
-        alt="opmug"
-      />
+      <img className="one-piece-mug" src={product.image} alt="opmug" />
       <div className="text-content">
-        <h1 className="title">One Piece Mug - Chopper</h1>
-        <h2 className="title2">Prix du produit : 12,00 €</h2>
+        <h1 className="title">{product.title}</h1>
+        <h2 className="title2">Prix du produit : {product.price}</h2>
         <p>
           Caractéristiques
           <br />

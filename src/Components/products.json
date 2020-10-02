@@ -5,7 +5,13 @@
       "title": "Figurine Luffy",
       "imagexs": "./img/figurine/Manga/One-piece-Luffy-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Luffy-500.jpg",
-      "price": "64,99€"
+      "price": "39,90€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-luffy-20th",
@@ -217,17 +223,24 @@
       "price": "64,99€"
     },
     {
-      "id": "goodies-op-tapis",
-      "title": "One Piece Tapis de souris",
-      "imagexs": "/img/goodies/One-piece-tapis-souris-xs.jpg",
-      "image": "/img/goodies/One-piece-tapis-souris-500.jpg",
+      "id": "goodies-doraemon-bronze",
+      "title": "Doraemon Bronze",
+      "imagexs": "/img/goodies/doraemon-bronze-xs.jpg",
+      "image": "/img/goodies/doraemon-bronze-500.jpg",
       "price": "64,99€"
     },
     {
-      "id": "goodies-op-porte-cles",
-      "title": "One Piece Porte-clés",
-      "imagexs": "/img/goodies/One-piece-porte-cles-xs.jpg",
-      "image": "/img/goodies/One-piece-porte-cles-500.jpg",
+      "id": "goodies-doraemon",
+      "title": "Doraemon Peluche",
+      "imagexs": "/img/goodies/doraemon-xs.jpg",
+      "image": "/img/goodies/doraemon-500.jpg",
+      "price": "64,99€"
+    },
+    {
+      "id": "goodies-death-note",
+      "title": "Lampe Death Note",
+      "imagexs": "/img/goodies/Death-note-xs.jpg",
+      "image": "/img/goodies/Death-note-500.jpg",
       "price": "64,99€"
     },
     {
@@ -235,13 +248,6 @@
       "title": "Ghibli Neko Bus",
       "imagexs": "/img/goodies/Ghibli-neko-bus-xs.jpg",
       "image": "/img/goodies/Ghibli-neko-bus-500.jpg",
-      "price": "64,99€"
-    },
-    {
-      "id": "goodies-ghibli-calendar",
-      "title": "Ghibli Calendrier Chihiro",
-      "imagexs": "/img/goodies/le-voyage-de-chihiro-calendrier-xs.jpg",
-      "image": "/img/goodies/le-voyage-de-chihiro-calendrier-500.jpg",
       "price": "64,99€"
     },
 

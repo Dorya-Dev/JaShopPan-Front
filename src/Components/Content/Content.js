@@ -9,16 +9,15 @@ function Content() {
   return (
     <div className="content-container">
       <Row>
-        <Col sm={8} lg={10}>
+        <Col className="content-col" sm={12} lg={9}>
           <h2>Catégorie Mangas</h2>
-
           <ProductRow products={manga} />
           <h2>Catégorie Jeux Vidéo</h2>
           <ProductRow products={videoGames} />
           <h2>Catégorie Goodies</h2>
           <ProductRow products={goodies} />
         </Col>
-        <Col sm={4} lg={2}>
+        <Col sm={0} lg={3}>
           <div className="sidebar">
             <Sidebar
               category1={manga}

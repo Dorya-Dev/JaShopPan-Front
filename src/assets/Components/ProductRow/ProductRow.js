@@ -10,11 +10,15 @@ function ProductRow(props) {
 
     props.products.forEach((product, index) => {
       productsJSX.push(
-        <Col className="product-row-col">
+        <Col sm={6} md={4} lg={3} className="product-row-col">
           <Card className="product-card">
             <Card.Img variant="top" src={product.imagexs} />
             <Card.Body>
-              <Card.Title>{product.title}</Card.Title>
+              <Card.Title className="card-title">
+                {product.title.length > 20
+                  ? product.title.substring(0, 17) + "..."
+                  : product.title}
+              </Card.Title>
               <Card.Text>{product.price}</Card.Text>
               <Link to={"/product?id=" + product.id}>
                 <Button variant="primary">Voir Produit</Button>

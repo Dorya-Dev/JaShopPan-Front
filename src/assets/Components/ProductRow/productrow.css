@@ -1,12 +1,10 @@
 .product-row-col {
-  margin-left: 15px;
+  margin: 20px 0px;
   text-align: center;
 }
 .product-row-col p {
   margin: 5px 0px;
 }
 .product-row-col .product-card img {
-  height: 250px;
-  width: 250px;
   margin: auto;
 }

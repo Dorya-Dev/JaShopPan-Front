@@ -13,7 +13,11 @@ function Sidebar(props) {
       <Card className="product-card">
         <Card.Img variant="top" src={product.imagexs} />
         <Card.Body>
-          <Card.Title>{product.title}</Card.Title>
+          <Card.Title>
+            {product.title.length > 20
+              ? product.title.substring(0, 17) + "..."
+              : product.title}
+          </Card.Title>
           <Link to={"/product?id=" + product.id}>
             <Button variant="primary">Voir Produit</Button>
           </Link>

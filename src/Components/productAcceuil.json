@@ -1,69 +1,69 @@
 {
   "Mangas": [
     {
-      "image": "./img/figurine/Manga/One-piece-Luffy-xs.jpg",
+      "imagexs": "./img/figurine/Manga/One-piece-Luffy-xs.jpg",
       "title": "Figurine Luffy",
       "price": "Prix: 64,99€"
     },
     {
-      "image": "./img/figurine/Manga/One-piece-Luffy-anniv-xs.jpg",
+      "imagexs": "./img/figurine/Manga/One-piece-Luffy-anniv-xs.jpg",
       "title": "Figurine Luffy 20th Anniversary",
       "price": "Prix: 399,99€"
     },
     {
-      "image": "./img/figurine/Manga/One-piece-Chopper-xs.jpg",
+      "imagexs": "./img/figurine/Manga/One-piece-Chopper-xs.jpg",
       "title": "Figurine Chopper",
       "price": "Prix: 79,99€"
     },
     {
-      "image": "./img/figurine/Manga/One-piece-Usopp-xs.jpg",
+      "imagexs": "./img/figurine/Manga/One-piece-Usopp-xs.jpg",
       "title": "Figurine Usopp",
       "price": "Prix: 34,99€"
     }
   ],
   "JeuxVideo": [
     {
-      "image": "./img/figurine/JeuxVideo/crash-bandicoot-xs.jpg",
+      "imagexs": "./img/figurine/JeuxVideo/crash-bandicoot-xs.jpg",
       "title": "Crash Bandicoot",
       "price": "Prix: 74,99€"
     },
     {
-      "image": "./img/figurine/JeuxVideo/gouken-street-fighter-xs.jpg",
+      "imagexs": "./img/figurine/JeuxVideo/gouken-street-fighter-xs.jpg",
       "title": "Street Fighter - Vega",
       "price": "Prix: 489,99€"
     },
     {
-      "image": "./img/figurine/JeuxVideo/link-pvc-xs.jpg",
+      "imagexs": "./img/figurine/JeuxVideo/link-pvc-xs.jpg",
       "title": "The Legend of Zelda - Link",
       "price": "Prix: 74,99€"
     },
     {
-      "image": "./img/figurine/JeuxVideo/Drake-xs.jpg",
+      "imagexs": "./img/figurine/JeuxVideo/Drake-xs.jpg",
       "title": "Sonic The Edgehog - ",
       "price": "Prix: 49,99€"
     }
   ],
   "Goodies": [
     {
-      "image": "./img/Goodies/One-piece-mug-xs.jpg",
+      "imagexs": "./img/Goodies/One-piece-mug-xs.jpg",
       "title": "Mug Chopper",
       "price": "Prix: 14,99€"
     },
 
     {
-      "image": "./img/Goodies/One-piece-porte-cles-Luffy-xs.jpg",
+      "imagexs": "./img/Goodies/One-piece-porte-cles-Luffy-xs.jpg",
       "title": "porte-clé Luffy",
       "price": "Prix: 9,99€"
     },
 
     {
-      "image": "./img/Goodies/One-piece-porte-cles-xs.jpg",
+      "imagexs": "./img/Goodies/One-piece-porte-cles-xs.jpg",
       "title": "porte-clé Chopper",
       "price": "Prix: 9,99€"
     },
 
     {
-      "image": "./img/Goodies/One-piece-tapis-souris-xs.jpg",
+      "imagexs": "./img/Goodies/One-piece-tapis-souris-xs.jpg",
       "title": "Tapis de souris One Piece",
       "price": "Prix: 19,99€"
     }
@@ -71,19 +71,19 @@
 
   "Toptendance": [
     {
-      "image": "./img/Goodies/One-piece-mug-xs.jpg",
+      "imagexs": "./img/Goodies/One-piece-mug-xs.jpg",
       "title": "Mug Chopper"
     },
     {
-      "image": "./img/figurine/Manga/Piccolo-Daimao-xs.jpg",
+      "imagexs": "./img/figurine/Manga/Piccolo-Daimao-xs.jpg",
       "title": "Piccolo-DBZ"
     },
     {
-      "image": "./img/figurine/JeuxVideo/Okami-xs.jpg",
+      "imagexs": "./img/figurine/JeuxVideo/Okami-xs.jpg",
       "title": "Okami"
     },
     {
-      "image": "./img/figurine/JeuxVideo/the-last-of-us-2-xs.jpg",
+      "imagexs": "./img/figurine/JeuxVideo/the-last-of-us-2-xs.jpg",
       "title": "Statue Ellie"
     }
   ]

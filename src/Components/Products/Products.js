@@ -2,7 +2,8 @@ import React from "react";
 import "./products.css";
 import { useLocation } from "react-router-dom";
 import { manga, videoGames, goodies } from "../products.json";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Button } from "react-bootstrap";
+import { RiShoppingCart2Line } from "react-icons/ri";
 
 function Products() {
   const query = new URLSearchParams(useLocation().search);
@@ -28,7 +29,12 @@ function Products() {
                 })}
               </ul>
             </p>
-            <p className="description">Description du produit</p>
+            <div className="button-cart">
+              <Button id="cart" variant="outline-warning">
+                <RiShoppingCart2Line className="logo-cart" /> Acheter
+              </Button>
+            </div>
+            {/* <p className="description">Description du produit</p>*/}
           </div>
         </Col>
       </Row>

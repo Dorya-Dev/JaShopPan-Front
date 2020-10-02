@@ -1,15 +1,12 @@
 import React from "react";
 import "./accueil.css";
-import { Col, Row, Carousel, Container } from "react-bootstrap";
-import {
-  Mangas,
-  JeuxVideo,
-  Goodies,
-  Toptendance,
-} from "../productAcceuil.json";
+import { Col, Row, Carousel } from "react-bootstrap";
+import { Mangas, JeuxVideo, Goodies } from "../productAcceuil.json";
 import ProductRow from "../../assets/Components/ProductRow/ProductRow";
 import Sidebar from "../../assets/Components/Sidebar/Sidebar";
 import { manga, videoGames, goodies } from "../products.json";
+import { HashLink } from "react-router-hash-link";
+
 function Accueil() {
   return (
     <section className="test">
@@ -31,15 +28,21 @@ function Accueil() {
         <Row>
           <Col xl={9} lg={11}>
             <div className="middle">
-              <h2>Figurines Mangas</h2>
+              <HashLink id="content-link" to="/content#link-mangas">
+                <h2>Figurines Mangas</h2>
+              </HashLink>
               <hr />
               <ProductRow products={Mangas} />
               <br />
-              <h2>Figurines Jeux Vidéo</h2>
+              <HashLink id="content-link" to="/content#link-jeuvideo">
+                <h2>Figurines Jeux Vidéo</h2>
+              </HashLink>
               <hr />
               <ProductRow products={JeuxVideo} />
               <br />
-              <h2>Goodies</h2>
+              <HashLink id="content-link" to="/content#link-goodies">
+                <h2>Goodies</h2>
+              </HashLink>
               <hr />
               <ProductRow products={Goodies} />
             </div>

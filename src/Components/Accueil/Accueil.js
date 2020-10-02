@@ -1,7 +1,7 @@
 import React from "react";
 import "./accueil.css";
 import { Col, Row, Carousel } from "react-bootstrap";
-import { Mangas, JeuxVideo, Goodies } from "../productAcceuil.json";
+import { Mangas, JeuxVideo, Goodies } from "../productAccueil.json";
 import ProductRow from "../../assets/Components/ProductRow/ProductRow";
 import Sidebar from "../../assets/Components/Sidebar/Sidebar";
 import { manga, videoGames, goodies } from "../products.json";

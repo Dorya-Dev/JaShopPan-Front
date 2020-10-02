@@ -10,13 +10,19 @@ function Content() {
     <div className="content-container">
       <Row>
         <Col className="content-col" sm={12} lg={9}>
-          <h2 id="link-mangas">Catégorie Mangas</h2>
-          <ProductRow products={manga} />
-          <h2 id="link-jeuvideo">Catégorie Jeux Vidéo</h2>
-          <ProductRow products={videoGames} />
-          <h2 id="link-goodies">Catégorie Goodies</h2>
-          <ProductRow products={goodies} />
+          <div className="middle">
+            <h2 id="link-mangas">Catégorie Mangas</h2>
+            <hr />
+            <ProductRow products={manga} />
+            <h2 id="link-jeuvideo">Catégorie Jeux Vidéo</h2>
+            <hr />
+            <ProductRow products={videoGames} />
+            <h2 id="link-goodies">Catégorie Goodies</h2>
+            <hr />
+            <ProductRow products={goodies} />
+          </div>
         </Col>
+
         <Col sm={0} lg={3}>
           <div className="sidebar">
             <Sidebar

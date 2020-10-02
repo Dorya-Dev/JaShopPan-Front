@@ -1,5 +1,4 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
 import "./sidebar.css";
 
 function Sidebar(props) {
@@ -21,6 +20,7 @@ function Sidebar(props) {
       {renderRandomProduct(props.category1)}
       {renderRandomProduct(props.category2)}
       {renderRandomProduct(props.category3)}
+      {renderRandomProduct(props.category4)}
     </div>
   );
 }

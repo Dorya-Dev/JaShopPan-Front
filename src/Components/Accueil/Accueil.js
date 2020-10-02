@@ -13,20 +13,20 @@ function Accueil() {
       <div className="essai">
         <Carousel className="content">
           <Carousel.Item>
-            <img className="d-block w-100" src="allmangas.png" />
+            <img className="d-block w-100" src="bienvenue.png" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src="nero.jpg" />
+            <img className="d-block w-100" src="Halloween.png" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src="smash-bros.jpg" />
+            <img className="d-block w-100" src="GTA V.jpg" />
           </Carousel.Item>
         </Carousel>
       </div>
       <br />
       <div className="home-container">
         <Row>
-          <Col xl={9} lg={11}>
+          <Col sm={12} lg={9}>
             <div className="middle">
               <HashLink id="content-link" to="/content#link-mangas">
                 <h2>Figurines Mangas</h2>
@@ -47,7 +47,7 @@ function Accueil() {
               <ProductRow products={Goodies} />
             </div>
           </Col>
-          <Col xl={3} lg={1}>
+          <Col sm={0} lg={3}>
             <Sidebar
               category1={manga}
               category2={videoGames}

@@ -3,145 +3,261 @@
     {
       "id": "figurine-luffy",
       "title": "Figurine Luffy",
-      "image": "./img/figurine/Manga/One-piece-Luffy-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/One-piece-Luffy-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Luffy-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-luffy-20th",
       "title": "Figurine Luffy 20th Anniversary",
-      "image": "./img/figurine/Manga/One-piece-Luffy-anniv-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/One-piece-Luffy-anniv-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Luffy-anniv-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-chopper",
       "title": "Figurine Chopper",
-      "image": "./img/figurine/Manga/One-piece-Chopper-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/One-piece-Chopper-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Chopper-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-usopp",
       "title": "Figurine Usopp",
-      "image": "./img/figurine/Manga/One-piece-Usopp-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/One-piece-Usopp-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Usopp-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-robin",
       "title": "Figurine Nico Robin",
-      "image": "./img/figurine/Manga/One-piece-Robin-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/One-piece-Robin-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Robin-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-nami",
       "title": "Figurine Nami",
-      "image": "./img/figurine/Manga/One-piece-Nami-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/One-piece-Nami-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Nami-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-shank",
       "title": "Figurine Shank et Luffy",
-      "image": "./img/figurine/Manga/One-piece-Luffy-kid-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/One-piece-Luffy-kid-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Luffy-kid-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-sanji",
       "title": "Figurine Sanji",
-      "image": "./img/figurine/Manga/One-piece-Sanji-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/One-piece-Sanji-xs.jpg",
+      "image": "./img/figurine/Manga/One-piece-Sanji-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-goku",
       "title": "Figurine Goku petit",
-      "image": "./img/figurine/Manga/Goku-petit-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/Goku-petit-xs.jpg",
+      "image": "./img/figurine/Manga/Goku-petit-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-freezer",
       "title": "Figurine Freezer Forme Finale",
-      "image": "./img/figurine/Manga/Freezer-Forme-Finale-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/Freezer-Forme-Finale-xs.jpg",
+      "image": "./img/figurine/Manga/Freezer-Forme-Finale-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-roshi",
       "title": "Figurine Master Roshi",
-      "image": "./img/figurine/Manga/Master-Roshi-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/Master-Roshi-xs.jpg",
+      "image": "./img/figurine/Manga/Master-Roshi-500.jpg",
+      "price": "64,99€"
     },
     {
+      "id": "figurine-krilin",
       "title": "Figurine Krilin",
-      "image": "./img/figurine/Manga/Krilin-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/Manga/Krilin-xs.jpg",
+      "image": "./img/figurine/Manga/Krilin-500.jpg",
+      "price": "64,99€"
+    },
+    {
+      "id": "figurine-jiraiya",
+      "title": "Figurine Jiraiya",
+      "imagexs": "./img/figurine/Manga/Jiraiya-xs.jpg",
+      "image": "./img/figurine/Manga/Jiraiya-500.jpg",
+      "price": "64,99€"
+    },
+    {
+      "id": "figurine-kisame",
+      "title": "Figurine Kisame",
+      "imagexs": "./img/figurine/Manga/Kisame-xs.jpg",
+      "image": "./img/figurine/Manga/Kisame-500.jpg",
+      "price": "64,99€"
+    },
+    {
+      "id": "figurine-naruto ",
+      "title": "Figurine Naruto ",
+      "imagexs": "./img/figurine/Manga/naruto-xs.jpg",
+      "image": "./img/figurine/Manga/naruto-500.jpg",
+      "price": "64,99€"
+    },
+    {
+      "id": "figurine-jiraiya ",
+      "title": "Figurine Jiraiya ",
+      "imagexs": "./img/figurine/Manga/orochimaru-xs.jpg",
+      "image": "./img/figurine/Manga/orochimaru-500.jpg",
+      "price": "64,99€"
     }
   ],
 
   "videoGames": [
     {
+      "id": "figurine-crash",
       "title": "Crash Bandicoot",
-      "image": "./img/figurine/JeuxVideo/crash-bandicoot-xs.jpg",
-      "price": "Prix: 74,99€"
+      "imagexs": "./img/figurine/JeuxVideo/crash-bandicoot-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/crash-bandicoot-500.jpg",
+      "price": "74,99€"
     },
     {
+      "id": "figurine-vega",
       "title": "Street Fighter - Vega",
-      "image": "./img/figurine/JeuxVideo/gouken-street-fighter-xs.jpg",
-      "price": "Prix: 489,99€"
+      "imagexs": "./img/figurine/JeuxVideo/gouken-street-fighter-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/gouken-street-fighter-500.jpg",
+      "price": "489,99€"
     },
     {
+      "id": "figurine-link",
       "title": "The Legend of Zelda - Link",
-      "image": "./img/figurine/JeuxVideo/link-pvc-xs.jpg",
-      "price": "Prix: 74,99€"
+      "imagexs": "./img/figurine/JeuxVideo/link-pvc-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/link-pvc-500.jpg",
+      "price": "74,99€"
     },
     {
+      "id": "figurine-sonic",
       "title": "Sonic The Edgehog",
-      "image": "./img/figurine/JeuxVideo/sonic-xs.jpg",
-      "price": "Prix: 79,99€"
+      "imagexs": "./img/figurine/JeuxVideo/sonic-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/sonic-500.jpg",
+      "price": "79,99€"
     },
     {
+      "id": "figurine-ezio",
       "title": "Assassin's Creed II - Ezio Auditore",
-      "image": "./img/figurine/JeuxVideo/ezio-auditore-xs.jpg",
-      "price": "Prix: 129,99€"
+      "imagexs": "./img/figurine/JeuxVideo/ezio-auditore-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/ezio-auditore-500.jpg",
+      "price": "129,99€"
     },
     {
+      "id": "figurine-deus",
       "title": "Deus Ex Mankind Divided - Adam Jensen",
-      "image": "./img/figurine/JeuxVideo/deus-ex-xs.jpg",
-      "price": "Prix: 54,99€"
+      "imagexs": "./img/figurine/JeuxVideo/deus-ex-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/deus-ex-500.jpg",
+      "price": "54,99€"
     },
     {
+      "id": "figurine-nero",
       "title": "Devil May Cry 5 - Nero",
-      "image": "./img/figurine/JeuxVideo/devil-may-cry-5-xs.jpg",
-      "price": "Prix: 279,99€"
+      "imagexs": "./img/figurine/JeuxVideo/devil-may-cry-5-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/devil-may-cry-5-500.jpg",
+      "price": "279,99€"
     },
     {
+      "id": "figurine-drake",
       "title": "Uncharted 4 - Drake",
-      "image": "./img/figurine/JeuxVideo/Drake-xs.jpg",
-      "price": "Prix: 49,99€"
+      "imagexs": "./img/figurine/JeuxVideo/Drake-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/Drake-500.jpg",
+      "price": "49,99€"
     },
     {
+      "id": "figurine-megaman",
       "title": "Megaman",
-      "image": "./img/figurine/JeuxVideo/megaman-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "./img/figurine/JeuxVideo/megaman-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/megaman-500.jpg",
+      "price": "64,99€"
     },
     {
       "id": "okami",
       "title": "First For Figures - Okami",
-      "image": "./img/figurine/JeuxVideo/okami-xs.jpg",
-      "price": "Prix:64.99€"
+      "imagexs": "./img/figurine/JeuxVideo/okami-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/okami-500.jpg",
+      "price": "64.99€"
     },
     {
+      "id": "figurine-overwatch",
       "title": "Overwatch - Reaper",
-      "image": "./img/figurine/JeuxVideo/overwatch-xs.jpg",
-      "price": "Prix:64.99€"
+      "imagexs": "./img/figurine/JeuxVideo/overwatch-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/overwatch-500.jpg",
+      "price": "64.99€"
     },
     {
+      "id": "figurine-last",
       "title": "The last of us",
-      "image": "./img/figurine/JeuxVideo/the-last-of-us-2-xs.jpg",
-      "price": "Prix:64.99€"
+      "imagexs": "./img/figurine/JeuxVideo/the-last-of-us-2-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/the-last-of-us-2-500.jpg",
+      "price": "64.99€"
     }
   ],
 
   "goodies": [
     {
+      "id": "goodies-op-mug",
       "title": "One Piece Mug",
-      "image": "/img/goodies/One-piece-mug-xs.jpg",
-      "price": "Prix: 64,99€"
+      "imagexs": "/img/goodies/One-piece-mug-xs.jpg",
+      "image": "/img/goodies/One-piece-mug-500.jpg",
+      "price": "64,99€"
     },
     {
-      "title": "One Piece Mug",
-      "image": "/img/goodies/One-piece-porte-cles-Luffy-xs.jpg",
-      "price": "Prix: 64,99€"
+      "id": "goodies-op-porte-cles-luffy",
+      "title": "One Piece Porte-clés Luffy",
+      "imagexs": "/img/goodies/One-piece-porte-cles-Luffy-xs.jpg",
+      "image": "/img/goodies/One-piece-porte-cles-Luffy-500.jpg",
+      "price": "64,99€"
     },
     {
-      "title": "One Piece Mug",
-      "image": "/img/goodies/One-piece-porte-cles-Luffy-xs.jpg",
-      "price": "Prix: 64,99€"
+      "id": "goodies-op-tapis",
+      "title": "One Piece Tapis de souris",
+      "imagexs": "/img/goodies/One-piece-tapis-souris-xs.jpg",
+      "image": "/img/goodies/One-piece-tapis-souris-500.jpg",
+      "price": "64,99€"
+    },
+    {
+      "id": "goodies-op-porte-cles",
+      "title": "One Piece Porte-clés",
+      "imagexs": "/img/goodies/One-piece-porte-cles-xs.jpg",
+      "image": "/img/goodies/One-piece-porte-cles-500.jpg",
+      "price": "64,99€"
+    },
+    {
+      "id": "goodies-ghibli-bus",
+      "title": "Ghibli Neko Bus",
+      "imagexs": "/img/goodies/Ghibli-neko-bus-xs.jpg",
+      "image": "/img/goodies/Ghibli-neko-bus-500.jpg",
+      "price": "64,99€"
+    },
+    {
+      "id": "goodies-ghibli-calendar",
+      "title": "Ghibli Calendrier Chihiro",
+      "imagexs": "/img/goodies/le-voyage-de-chihiro-calendrier-xs.jpg",
+      "image": "/img/goodies/le-voyage-de-chihiro-calendrier-500.jpg",
+      "price": "64,99€"
+    },
+
+    {
+      "id": "goodies-ghibli-piggybank",
+      "title": "Ghibli Tirelire No Face",
+      "imagexs": "/img/goodies/tirelire-no-face-beneclic-chihiro_1-xs.jpg",
+      "image": "/img/goodies/tirelire-no-face-beneclic-chihiro_1-500.jpg",
+      "price": "64,99€"
+    },
+    {
+      "id": "goodies-ghibli-totoro",
+      "title": "Ghibli Peluche Totoro",
+      "imagexs": "/img/goodies/totoro-xs.jpg",
+      "image": "/img/goodies/totoro-500.jpg",
+      "price": "64,99€"
     }
   ]
 }

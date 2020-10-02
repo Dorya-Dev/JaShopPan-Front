@@ -24,6 +24,7 @@ function Content() {
               category1={manga}
               category2={videoGames}
               category3={goodies}
+              category4={videoGames}
             />
           </div>
         </Col>

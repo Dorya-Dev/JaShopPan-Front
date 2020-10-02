@@ -1,6 +1,6 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
 import "./sidebar.css";
+import { AiFillFire } from "react-icons/ai";
 
 function Sidebar(props) {
   let renderRandomProduct = (products) => {
@@ -17,10 +17,18 @@ function Sidebar(props) {
   };
 
   return (
-    <div>
+    <div className="Toptendance">
+      <h3>
+        <AiFillFire />
+        Top Tendance
+        <AiFillFire />
+      </h3>
+
+      <hr />
       {renderRandomProduct(props.category1)}
       {renderRandomProduct(props.category2)}
       {renderRandomProduct(props.category3)}
+      {renderRandomProduct(props.category4)}
     </div>
   );
 }

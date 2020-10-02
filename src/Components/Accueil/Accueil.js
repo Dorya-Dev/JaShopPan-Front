@@ -8,8 +8,8 @@ import {
   Toptendance,
 } from "../productAcceuil.json";
 import ProductRow from "../../assets/Components/ProductRow/ProductRow";
-import { AiFillFire } from "react-icons/ai";
-
+import Sidebar from "../../assets/Components/Sidebar/Sidebar";
+import { manga, videoGames, goodies } from "../products.json";
 function Accueil() {
   return (
     <section className="test">
@@ -45,17 +45,12 @@ function Accueil() {
             </div>
           </Col>
           <Col xl={3} lg={1}>
-            <div className="Toptendance">
-              <h2>
-                <AiFillFire />
-                Top Tendance
-                <AiFillFire />
-              </h2>
-
-              <hr />
-
-              <ProductRow products={Toptendance} />
-            </div>
+            <Sidebar
+              category1={manga}
+              category2={videoGames}
+              category3={goodies}
+              category4={videoGames}
+            />
           </Col>
         </Row>
       </div>

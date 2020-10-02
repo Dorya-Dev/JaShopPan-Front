@@ -1,5 +1,7 @@
 #logo {
-  margin: 5px;
+  margin: 20px;
+  width: auto;
+  height: 70px;
 }
 .header {
   background-color: #343a40;
@@ -9,101 +11,106 @@
   right: 0;
   z-index: 1000;
   box-shadow: 4px 2px 8px rgb(0, 0, 0);
+  height: 110px;
 }
-.Top {
-  display: inline-block;
-  width: 50%;
+
+.nav-link {
+  margin: 0px 5px;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: white !important;
-  font-size: 25px;
+  font-size: 22px;
+  transition: font-size 0.3s linear;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #17a2b8;
   font-size: 25px;
-  border: solid 1px #17a2b8;
-  border-radius: 10px;
+  border-bottom: solid 3px#e77b2e;
+  transition: font-size 0.3s linear;
 }
 .form-inline .form-control {
   width: 500px !important;
   text-align: center;
   margin: 10px;
+  border: solid black 2px;
+  border-radius: 10px;
 }
 .form-inline {
   justify-content: center;
   padding: 10px 0px;
-  background-color: #464646;
+  background-color: transparent;
 }
-.Menu {
-  justify-content: right !important;
+#Menu {
+  float: right;
+  top: 20px;
 }
 .navbar-nav svg {
-  font-size: 30px;
+  font-size: 20px;
   vertical-align: sub;
+  position: relative;
+  bottom: 4px;
+  margin-right: 10px;
 }
-.menu-navmob {
+.menu-mobile {
   display: none;
 }
-.header-search {
-  font-size: 40px;
-  margin: 0px 20px;
-  cursor: pointer;
+.menu-mobile-global {
+  display: none;
+}
+.search-toogle {
+  background-color: #303030ef;
 }
 
-@media screen and (min-width: 641px) and (max-width: 900px) {
-  .Top {
-    width: 100%;
-  }
+#btn {
+  color: white;
+  border: transparent solid 1px;
+  background-color: transparent;
 }
-@media screen and (max-width: 640px) {
-  .header-nav-mob {
-    text-align: right;
-    font-size: 50px;
-    color: white;
+#btn:hover {
+  border-bottom: solid 1px#ffa766 !important;
+}
+
+@media screen and (max-width: 840px) {
+  .navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 25px;
+    display: none;
+  }
+  .menu-mobile {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 20px;
-  }
-  .Top {
-    width: 100%;
-  }
-  .menu-navmob {
-    display: block;
+    font-size: 40px;
     color: white;
-    font-size: 50px;
+    margin-top: 35px;
+    margin-right: 40px;
+  }
+  .nav {
+    flex-direction: column;
     position: absolute;
-    top: 5px;
-    right: 0px;
-    margin-right: 20px;
+    top: 0;
+    right: 0;
+    background-color: #4c5157;
+    margin-top: 110px;
+    border-left: solid 3px #ffa766;
+    border-radius: 0px;
   }
-  .menu-navmob:hover {
-    cursor: pointer;
+  .menu-mobile-global .nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
   }
-  .navbar-dark .navbar-nav .nav-link {
-    color: white !important;
-    font-size: 25px;
-    display: inline-block;
-    margin: 10px 15px;
-    border: solid 1px transparent;
+  .menu-mobile-global .nav-link:hover {
+    text-decoration: none;
+    color: #ffa766;
   }
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #17a2b8;
-    font-size: 25px;
-    border: solid 1px #17a2b8;
-    border-radius: 10px;
-    margin: 10px 15px;
-  }
-  .Menu .navbar .navbar-expand .navbar-dark {
+  .menu-mobile-global {
     display: block;
   }
-  .navbar-nav {
-    flex-direction: column !important;
-    background-color: black;
-    position: absolute;
-    margin: 10px 10px;
-    border-radius: 10px;
-    margin-right: 53px;
+  #logo {
+    margin: 20px;
+    width: auto;
+    height: 70px;
   }
 }

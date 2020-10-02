@@ -23,20 +23,20 @@
   margin-right: 30px;
   padding: 4px;
   background-color: #343a40;
-  border: solid #17a2b8 2px;
+  border: solid#ffa766 2px;
   border-radius: 10px;
   position: relative;
   z-index: 1;
 }
 .moncompte-body button:hover {
   font-size: 20px;
-  color: #17a2b8;
+  color: #ffa766;
   float: right;
   margin-top: 30px;
   margin-right: 30px;
   border-radius: 10px;
   padding: 4px;
-  border: solid #17a2b8 2px;
+  border: solid#ffa766 2px;
   background-color: #343a40;
   position: relative;
   z-index: 1;
@@ -58,7 +58,7 @@ label:hover {
   cursor: pointer;
 }
 .title-moncompte {
-  color: #17a2b8;
+  color: #ffa766;
   font-family: "Righteous", serif;
   margin: 20px;
   margin-bottom: 50px;

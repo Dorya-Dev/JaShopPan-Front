@@ -1,6 +1,8 @@
 import React from "react";
 import "./sidebar.css";
 import { AiFillFire } from "react-icons/ai";
+import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Sidebar(props) {
   let renderRandomProduct = (products) => {
@@ -8,11 +10,20 @@ function Sidebar(props) {
     let product = products[randomIndex];
 
     return (
-      <div className="sidebar-product">
+      <Card className="product-card">
+        <Card.Img variant="top" src={product.imagexs} />
+        <Card.Body>
+          <Card.Title>{product.title}</Card.Title>
+          <Link to={"/product?id=" + product.id}>
+            <Button variant="primary">Voir Produit</Button>
+          </Link>
+        </Card.Body>
+      </Card>
+      /*<div className="sidebar-product">
         <img src={product.imagexs} />
         <p>{product.title}</p>
         <p>{product.price}</p>
-      </div>
+      </div>*/
     );
   };
 

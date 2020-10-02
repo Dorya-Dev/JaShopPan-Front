@@ -7,3 +7,11 @@
 .Toptendance h2 {
   text-align: center;
 }
+.Toptendance .product-card {
+  margin: 20px auto;
+}
+.Toptendance .product-card img {
+  height: auto;
+  width: 60%;
+  margin: auto;
+}

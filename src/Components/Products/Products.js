@@ -6,9 +6,8 @@ import { manga, videoGames, goodies } from "../products.json";
 function Products() {
   const query = new URLSearchParams(useLocation().search);
   const id = query.get("id");
-  const product = manga.find((value) => value.id === id);
-  /*const product2 = videoGames.find((value) => value.id === id);
-  const product3 = goodies.find((value) => value.id === id);*/
+  const products = [...manga, ...videoGames, ...goodies];
+  const product = products.find((value) => value.id === id);
 
   return (
     <div className="products">

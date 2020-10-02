@@ -6,6 +6,7 @@
 }
 .products .title {
   color: rgb(75, 70, 70);
+  margin: 20px 20px 20px 0px;
 }
 .products .title2 {
   color: rgb(56, 61, 56);
@@ -13,9 +14,9 @@
 /*.products .one-piece-mug {
   text-align: center;
 }*/
-.text-content p {
+/*.text-content {
   line-height: 10px;
-}
+}*/
 /*.one-piece-mug {
   width: 600px;
   height: 600px;
@@ -23,3 +24,5 @@
 .product-pic {
   width: 100%;
 }
+/*.characteristics-list {
+}*/

@@ -18,105 +18,195 @@
       "title": "Figurine Luffy 20th Anniversary",
       "imagexs": "./img/figurine/Manga/One-piece-Luffy-anniv-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Luffy-anniv-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-chopper",
       "title": "Figurine Chopper",
       "imagexs": "./img/figurine/Manga/One-piece-Chopper-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Chopper-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-usopp",
       "title": "Figurine Usopp",
       "imagexs": "./img/figurine/Manga/One-piece-Usopp-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Usopp-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-robin",
       "title": "Figurine Nico Robin",
       "imagexs": "./img/figurine/Manga/One-piece-Robin-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Robin-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-nami",
       "title": "Figurine Nami",
       "imagexs": "./img/figurine/Manga/One-piece-Nami-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Nami-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-shank",
       "title": "Figurine Shank et Luffy",
       "imagexs": "./img/figurine/Manga/One-piece-Luffy-kid-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Luffy-kid-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-sanji",
       "title": "Figurine Sanji",
       "imagexs": "./img/figurine/Manga/One-piece-Sanji-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Sanji-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-goku",
       "title": "Figurine Goku petit",
       "imagexs": "./img/figurine/Manga/Goku-petit-xs.jpg",
       "image": "./img/figurine/Manga/Goku-petit-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-freezer",
       "title": "Figurine Freezer Forme Finale",
       "imagexs": "./img/figurine/Manga/Freezer-Forme-Finale-xs.jpg",
       "image": "./img/figurine/Manga/Freezer-Forme-Finale-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-roshi",
       "title": "Figurine Master Roshi",
       "imagexs": "./img/figurine/Manga/Master-Roshi-xs.jpg",
       "image": "./img/figurine/Manga/Master-Roshi-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-krilin",
       "title": "Figurine Krilin",
       "imagexs": "./img/figurine/Manga/Krilin-xs.jpg",
       "image": "./img/figurine/Manga/Krilin-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-jiraiya",
       "title": "Figurine Jiraiya",
       "imagexs": "./img/figurine/Manga/Jiraiya-xs.jpg",
       "image": "./img/figurine/Manga/Jiraiya-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-kisame",
       "title": "Figurine Kisame",
       "imagexs": "./img/figurine/Manga/Kisame-xs.jpg",
       "image": "./img/figurine/Manga/Kisame-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-naruto ",
       "title": "Figurine Naruto ",
       "imagexs": "./img/figurine/Manga/naruto-xs.jpg",
       "image": "./img/figurine/Manga/naruto-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-jiraiya ",
       "title": "Figurine Jiraiya ",
       "imagexs": "./img/figurine/Manga/orochimaru-xs.jpg",
       "image": "./img/figurine/Manga/orochimaru-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     }
   ],
 
@@ -126,84 +216,156 @@
       "title": "Crash Bandicoot",
       "imagexs": "./img/figurine/JeuxVideo/crash-bandicoot-xs.jpg",
       "image": "./img/figurine/JeuxVideo/crash-bandicoot-500.jpg",
-      "price": "74,99€"
+      "price": "74,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-vega",
       "title": "Street Fighter - Vega",
       "imagexs": "./img/figurine/JeuxVideo/gouken-street-fighter-xs.jpg",
       "image": "./img/figurine/JeuxVideo/gouken-street-fighter-500.jpg",
-      "price": "489,99€"
+      "price": "489,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-link",
       "title": "The Legend of Zelda - Link",
       "imagexs": "./img/figurine/JeuxVideo/link-pvc-xs.jpg",
       "image": "./img/figurine/JeuxVideo/link-pvc-500.jpg",
-      "price": "74,99€"
+      "price": "74,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-sonic",
       "title": "Sonic The Edgehog",
       "imagexs": "./img/figurine/JeuxVideo/sonic-xs.jpg",
       "image": "./img/figurine/JeuxVideo/sonic-500.jpg",
-      "price": "79,99€"
+      "price": "79,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-ezio",
       "title": "Assassin's Creed II - Ezio Auditore",
       "imagexs": "./img/figurine/JeuxVideo/ezio-auditore-xs.jpg",
       "image": "./img/figurine/JeuxVideo/ezio-auditore-500.jpg",
-      "price": "129,99€"
+      "price": "129,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-deus",
       "title": "Deus Ex Mankind Divided - Adam Jensen",
       "imagexs": "./img/figurine/JeuxVideo/deus-ex-xs.jpg",
       "image": "./img/figurine/JeuxVideo/deus-ex-500.jpg",
-      "price": "54,99€"
+      "price": "54,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-nero",
       "title": "Devil May Cry 5 - Nero",
       "imagexs": "./img/figurine/JeuxVideo/devil-may-cry-5-xs.jpg",
       "image": "./img/figurine/JeuxVideo/devil-may-cry-5-500.jpg",
-      "price": "279,99€"
+      "price": "279,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-drake",
       "title": "Uncharted 4 - Drake",
       "imagexs": "./img/figurine/JeuxVideo/Drake-xs.jpg",
       "image": "./img/figurine/JeuxVideo/Drake-500.jpg",
-      "price": "49,99€"
+      "price": "49,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-megaman",
       "title": "Megaman",
       "imagexs": "./img/figurine/JeuxVideo/megaman-xs.jpg",
       "image": "./img/figurine/JeuxVideo/megaman-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "okami",
       "title": "First For Figures - Okami",
       "imagexs": "./img/figurine/JeuxVideo/okami-xs.jpg",
       "image": "./img/figurine/JeuxVideo/okami-500.jpg",
-      "price": "64.99€"
+      "price": "64.99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-overwatch",
       "title": "Overwatch - Reaper",
       "imagexs": "./img/figurine/JeuxVideo/overwatch-xs.jpg",
       "image": "./img/figurine/JeuxVideo/overwatch-500.jpg",
-      "price": "64.99€"
+      "price": "64.99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "figurine-last",
       "title": "The last of us",
       "imagexs": "./img/figurine/JeuxVideo/the-last-of-us-2-xs.jpg",
       "image": "./img/figurine/JeuxVideo/the-last-of-us-2-500.jpg",
-      "price": "64.99€"
+      "price": "64.99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     }
   ],
 
@@ -213,42 +375,78 @@
       "title": "One Piece Mug",
       "imagexs": "/img/goodies/One-piece-mug-xs.jpg",
       "image": "/img/goodies/One-piece-mug-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "goodies-op-porte-cles-luffy",
       "title": "One Piece Porte-clés Luffy",
       "imagexs": "/img/goodies/One-piece-porte-cles-Luffy-xs.jpg",
       "image": "/img/goodies/One-piece-porte-cles-Luffy-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "goodies-doraemon-bronze",
       "title": "Doraemon Bronze",
       "imagexs": "/img/goodies/doraemon-bronze-xs.jpg",
       "image": "/img/goodies/doraemon-bronze-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "goodies-doraemon",
       "title": "Doraemon Peluche",
       "imagexs": "/img/goodies/doraemon-xs.jpg",
       "image": "/img/goodies/doraemon-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "goodies-death-note",
       "title": "Lampe Death Note",
       "imagexs": "/img/goodies/Death-note-xs.jpg",
       "image": "/img/goodies/Death-note-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "goodies-ghibli-bus",
       "title": "Ghibli Neko Bus",
       "imagexs": "/img/goodies/Ghibli-neko-bus-xs.jpg",
       "image": "/img/goodies/Ghibli-neko-bus-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
 
     {
@@ -256,14 +454,26 @@
       "title": "Ghibli Tirelire No Face",
       "imagexs": "/img/goodies/tirelire-no-face-beneclic-chihiro_1-xs.jpg",
       "image": "/img/goodies/tirelire-no-face-beneclic-chihiro_1-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     },
     {
       "id": "goodies-ghibli-totoro",
       "title": "Ghibli Peluche Totoro",
       "imagexs": "/img/goodies/totoro-xs.jpg",
       "image": "/img/goodies/totoro-500.jpg",
-      "price": "64,99€"
+      "price": "64,99€",
+      "characteristics": [
+        "Figurine en PVC de haute qualité",
+        "Mesure environ 25 cm sur socle",
+        "Gamme Memory de Banpresto",
+        "Se présente en boîte cartonnée"
+      ]
     }
   ]
 }

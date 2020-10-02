@@ -13,3 +13,10 @@
 /*.products .one-piece-mug {
   text-align: center;
 }*/
+.text-content p {
+  line-height: 10px;
+}
+/*.one-piece-mug {
+  width: 600px;
+  height: 600px;
+}*/

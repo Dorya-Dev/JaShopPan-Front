@@ -9,7 +9,7 @@ function Sidebar(props) {
 
     return (
       <div className="sidebar-product">
-        <img src={product.image} />
+        <img src={product.imagexs} />
         <p>{product.title}</p>
         <p>{product.price}</p>
       </div>

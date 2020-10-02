@@ -11,7 +11,7 @@ function ProductRow(props) {
       productsJSX.push(
         <Col className="product-row-col">
           <Link to={"/product?id=" + product.id}>
-            <img src={product.image} />
+            <img src={product.imagexs} />
             <p>{product.title}</p>
             <p>{product.price}</p>
           </Link>

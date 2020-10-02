@@ -4,7 +4,6 @@
   margin-top: -50px;
   height: calc(100vh - 110px);
   overflow: hidden;
-  max-height: 100%;
 }
 .content img {
   background-size: cover;
@@ -33,13 +32,15 @@
 }
 .carousel-control-prev {
   background-color: black !important;
-  width: 100px !important;
+  width: 50px !important;
 }
 .carousel-control-next {
   background-color: black !important;
-  width: 100px !important;
+  width: 50px !important;
 }
 
-.carousel-control-prev-icon {
-  color: red !important;
+@media screen and (max-width: 1500px) {
+  .content {
+    height: auto;
+  }
 }

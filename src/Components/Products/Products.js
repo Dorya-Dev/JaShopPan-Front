@@ -2,6 +2,7 @@ import React from "react";
 import "./products.css";
 import { useLocation } from "react-router-dom";
 import { manga, videoGames, goodies } from "../products.json";
+import { Col, Row } from "react-bootstrap";
 
 function Products() {
   const query = new URLSearchParams(useLocation().search);
@@ -11,19 +12,26 @@ function Products() {
 
   return (
     <div className="products">
-      <img className="one-piece-mug" src={product.image} alt="opmug" />
-      <div className="text-content">
-        <h1 className="title">{product.title}</h1>
-        <h2 className="price">Prix du produit : {product.price}</h2>
-        <p className="characteristics">Caractéristiques</p>
-
-        <p>
-          <strong>Dimensions :</strong> 10 cm
-        </p>
-
-        <p> Contenance : 460 ml</p>
-        <p className="description">Description du produit</p>
-      </div>
+      <Row>
+        <Col sm={12} lg={6}>
+          <img className="product-pic" src={product.image} alt="none" />
+        </Col>
+        <Col sm={12} lg={6}>
+          <div className="text-content">
+            <h1 className="title">{product.title}</h1>
+            <h2 className="price">Prix du produit : {product.price}</h2>
+            <p className="characteristics">
+              Caractéristiques :
+              <ul className="characteristics-list">
+                {product.characteristics.map((value, index) => {
+                  return <li key={index}>{value}</li>;
+                })}
+              </ul>
+            </p>
+            <p className="description">Description du produit</p>
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 }

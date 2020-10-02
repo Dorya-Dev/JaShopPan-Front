@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./moncompte.css";
-import { Link } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import { FcPhone } from "react-icons/fc";
@@ -23,35 +22,35 @@ function Moncompte() {
             <h2 className="title-moncompte">Vos commandes</h2>
           </div>
         );
-        break;
+
       case "setting":
         return (
           <div>
             <h2 className="title-moncompte">Paramètres de sécurité</h2>
           </div>
         );
-        break;
+
       case "address":
         return (
           <div>
             <h2 className="title-moncompte">Vos Adresses</h2>
           </div>
         );
-        break;
+
       case "payment":
         return (
           <div>
             <h2 className="title-moncompte">Vos Paiements</h2>
           </div>
         );
-        break;
+
       case "message":
         return (
           <div>
             <h2 className="title-moncompte">Votre Messagerie</h2>
           </div>
         );
-        break;
+
       case "contact":
         return (
           <div>
@@ -75,7 +74,7 @@ function Moncompte() {
             </div>
           </div>
         );
-        break;
+
       default:
         console.log("");
     }

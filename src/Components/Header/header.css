@@ -41,39 +41,13 @@
   font-size: 30px;
   vertical-align: sub;
 }
-.header-nav-mob {
+.menu-navmob {
   display: none;
 }
-
-.navmob {
-  text-align: right;
-  text-transform: uppercase;
-}
-.dropdown {
-  position: relative;
-  display: none;
-}
-.dropdown-content {
-  display: block;
-  z-index: 1;
-  right: 0;
-  background-color: rgb(44, 44, 44);
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-.dropdown i {
-  color: white;
-  background-color: black;
-  border: solid 4px black;
-  top: 0px;
-  position: absolute;
-  right: 0px;
+.header-search {
   font-size: 40px;
-  z-index: 2;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
+  margin: 0px 20px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 641px) and (max-width: 900px) {
@@ -82,9 +56,6 @@
   }
 }
 @media screen and (max-width: 640px) {
-  .navbar-dark .navbar-nav .nav-link {
-    display: none;
-  }
   .header-nav-mob {
     text-align: right;
     font-size: 50px;
@@ -98,17 +69,41 @@
   .Top {
     width: 100%;
   }
-  .dropdown {
+  .menu-navmob {
+    display: block;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    margin-right: 20px;
+  }
+  .menu-navmob:hover {
+    cursor: pointer;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 25px;
+    display: inline-block;
+    margin: 10px 15px;
+    border: solid 1px transparent;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    font-size: 25px;
+    border: solid 1px #17a2b8;
+    border-radius: 10px;
+    margin: 10px 15px;
+  }
+  .Menu .navbar .navbar-expand .navbar-dark {
     display: block;
   }
-  .dropdown-content {
-    display: block;
-  }
-  .dropdown-content .nav-link:hover {
-    display: block;
-    text-decoration: none !important;
-  }
-  .nav-link {
-    font-size: 20px;
+  .navbar-nav {
+    flex-direction: column !important;
+    background-color: black;
+    position: absolute;
+    margin: 10px 10px;
+    border-radius: 10px;
+    margin-right: 53px;
   }
 }

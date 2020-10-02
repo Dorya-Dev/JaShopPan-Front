@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
@@ -9,8 +9,30 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 import { IoIosHome } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FcSearch } from "react-icons/fc";
 
 function Header() {
+  const [displayNav, setDisplayNav] = useState(false);
+  const [displaySearch, setDisplaySearch] = useState(false);
+
+  function Navmobil() {
+    setDisplayNav(!displayNav);
+    if (setDisplayNav.style.display === "block") {
+      return <p>ttttttttttttt</p>;
+    } else if (setDisplayNav.style.display === "block") {
+      return <p>ooooooooooooooooooooooooooooooooooooooooooooo</p>;
+    }
+  }
+
+  function Search() {
+    setDisplaySearch(!displaySearch);
+    if (setDisplaySearch === true) {
+      return console.log("ok");
+    } else if (setDisplaySearch === false) {
+      return console.log("pasok");
+    }
+  }
+
   function connect() {
     let nom = localStorage.getItem("compte");
     if (nom) {
@@ -29,8 +51,10 @@ function Header() {
   }
   return (
     <header className="header">
+      <GiHamburgerMenu onClick={Navmobil} className="menu-navmob" />
       <div className="Top">
         <img id="logo" src="./logo.png" alt="logo" height="100" width="300" />
+        <FcSearch className="header-search" onClick={Search} />
       </div>
       <div className="Top">
         <Navbar className="Menu" variant="dark">
@@ -46,30 +70,8 @@ function Header() {
             </Link>
           </Nav>
         </Navbar>
-        {/* nav mobile*/}
-        <nav className="header-nav-mob">
-          <div className="navmob">
-            <div className="dropdown">
-              <GiHamburgerMenu />
-              <div className="dropdown-content">
-                <Link className="nav-link" to="/">
-                  <IoIosHome />
-                  <span> </span>
-                  Accueil
-                </Link>
-                {connect()}
-                <Link className="nav-link" to="/cart">
-                  Panier <span> </span> <RiShoppingCart2Line />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </nav>
       </div>
-      <Form inline>
-        <FormControl type="text" placeholder="Rechercher" className="mr-sm-2" />
-        <Button variant="outline-info">Rechercher</Button>
-      </Form>
+      {displaySearch}
     </header>
   );
 }

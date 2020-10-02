@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import { FcPhone } from "react-icons/fc";
 import { FcFeedback } from "react-icons/fc";
 import { FcRules } from "react-icons/fc";
+import { CgLogOff } from "react-icons/cg";
 
 function Moncompte() {
   const history = useHistory();
@@ -55,7 +56,7 @@ function Moncompte() {
         return (
           <div>
             <h2 className="title-moncompte">Nous Contacter</h2>
-            <div className="moncompt-contact">
+            <div className="moncompte-contact">
               <p>
                 {" "}
                 <FcPhone className="fcicone" /> Tel: +33000000000{" "}
@@ -91,6 +92,7 @@ function Moncompte() {
   return (
     <div className="moncompte-body">
       <button className="moncompe-button" onClick={Disconnect}>
+        <CgLogOff className="moncompte-icon" />
         Déconnexion
       </button>
       <br />

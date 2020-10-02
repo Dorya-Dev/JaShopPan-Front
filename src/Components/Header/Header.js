@@ -10,6 +10,7 @@ import { IoIosHome } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaSearch } from "react-icons/fa";
+import { MdAccountCircle } from "react-icons/md";
 
 function Header() {
   const [displayNav, setDisplayNav] = useState(false);
@@ -63,13 +64,13 @@ function Header() {
     if (nom) {
       return (
         <Link className="nav-link" to="/moncompte">
-          Mon compte
+          <MdAccountCircle className="hide-icon" /> Mon compte
         </Link>
       );
     } else {
       return (
         <Link className="nav-link" to="/account">
-          Se connecter
+          <MdAccountCircle className="hide-icon" /> Se connecter
         </Link>
       );
     }

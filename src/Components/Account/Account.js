@@ -65,7 +65,7 @@ function Account(props) {
             <input
               type="password"
               id="password"
-              placeholder="Saisir votre password"
+              placeholder="Saisir votre mot de passe"
               onChange={handlePassword}
               value={password}
             ></input>
@@ -100,7 +100,7 @@ function Account(props) {
               <input
                 type="password"
                 id="password"
-                placeholder="Saisir votre password"
+                placeholder="Saisir votre mot de passe"
                 onChange={newHandlePassword}
                 value={newPassword}
               ></input>
@@ -109,7 +109,7 @@ function Account(props) {
           <div className="button">
             <button onClick={Register}>S'inscrire</button>
             <div>
-              <span className="return">{display}</span>
+              <span className="return"></span>
             </div>
           </div>
         </div>

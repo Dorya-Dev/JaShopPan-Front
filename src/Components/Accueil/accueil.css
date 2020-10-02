@@ -31,12 +31,6 @@
 .carousel-indicators li {
   background-color: orangered !important;
 }
-.carousel-indicators {
-  background-color: rgba(0, 0, 0, 0.548) !important;
-}
-.carousel-indicators:hover {
-  background-color: rgba(0, 0, 0, 0.849) !important;
-}
 .carousel-control-prev {
   background-color: black !important;
   width: 100px !important;

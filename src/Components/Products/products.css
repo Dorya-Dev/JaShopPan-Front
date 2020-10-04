@@ -11,6 +11,10 @@
 .products .title2 {
   color: rgb(56, 61, 56);
 }
+
+.products .text-content p {
+  margin-bottom: 5px;
+}
 /*.products .one-piece-mug {
   text-align: center;
 }*/
@@ -36,5 +40,8 @@
 }
 
 .characteristics {
-  padding: 10px;
+  padding: 8px;
+}
+.title4 {
+  margin-bottom: 1rem;
 }

@@ -20,7 +20,7 @@
     },
     {
       "id": "figurine-usopp",
-      "imagexs": "./img/figurine/Manga/One-piece-Usopp-xs.jpg",
+      "imagexs": "./img/figurine/Manga/usopp-xs.jpg",
       "title": "Figurine Usopp",
       "price": "Prix : 34,99€"
     }
@@ -34,7 +34,7 @@
     },
     {
       "id": "figurine-vega",
-      "imagexs": "./img/figurine/JeuxVideo/gouken-street-fighter-xs.jpg",
+      "imagexs": "./img/figurine/JeuxVideo/vega-xs.jpg",
       "title": "Street Fighter - Vega",
       "price": "Prix : 439,90€"
     },

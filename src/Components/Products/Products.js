@@ -22,7 +22,7 @@ function Products() {
             <h1 className="title">{product.title}</h1>
             <h2 className="price">Prix du produit : {product.price}</h2>
             <p className="characteristics">
-              <h4>Caractéristiques :</h4>
+              <h4 className="title4">Caractéristiques :</h4>
 
               <ul className="characteristics-list">
                 {product.characteristics.map((value, index) => {
@@ -32,9 +32,11 @@ function Products() {
             </p>
 
             <div className="button-cart">
-              <Button id="cart" variant="outline-warning">
-                <RiShoppingCart2Line className="logo-cart" /> Acheter
-              </Button>
+              <form method="get" action="/cart">
+                <Button id="cart" variant="outline-warning">
+                  <RiShoppingCart2Line className="logo-cart" /> Acheter
+                </Button>
+              </form>
             </div>
             {/* <p className="description">Description du produit</p>*/}
           </div>

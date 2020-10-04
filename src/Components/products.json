@@ -2,7 +2,7 @@
   "manga": [
     {
       "id": "figurine-luffy",
-      "title": "Figurine Luffy",
+      "title": "Figurine Luffy D. Monkey",
       "imagexs": "./img/figurine/Manga/One-piece-Luffy-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Luffy-500.jpg",
       "price": "39,90€",
@@ -15,118 +15,67 @@
     },
     {
       "id": "figurine-luffy-20th",
-      "title": "Figurine Luffy 20th Anniversary",
+      "title": "Figurine Luffy D. Monkey 20th Anniversary",
       "imagexs": "./img/figurine/Manga/One-piece-Luffy-anniv-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Luffy-anniv-500.jpg",
-      "price": "64,99€",
+      "price": "264,99€",
       "characteristics": [
         "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Mesure 15 cm",
+        "Edition limitée 20ème Anniversaire",
+        "Vendue sous window box"
       ]
     },
     {
       "id": "figurine-chopper",
-      "title": "Figurine Chopper",
+      "title": "Figurine Tony Tony Chopper",
       "imagexs": "./img/figurine/Manga/One-piece-Chopper-xs.jpg",
       "image": "./img/figurine/Manga/One-piece-Chopper-500.jpg",
-      "price": "64,99€",
+      "price": "54,99€",
       "characteristics": [
         "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
+        "Mesure environ 20 cm",
+        "Gamme King Of Artist de Banpresto",
         "Se présente en boîte cartonnée"
       ]
     },
     {
       "id": "figurine-usopp",
       "title": "Figurine Usopp",
-      "imagexs": "./img/figurine/Manga/One-piece-Usopp-xs.jpg",
-      "image": "./img/figurine/Manga/One-piece-Usopp-500.jpg",
-      "price": "64,99€",
+      "imagexs": "./img/figurine/Manga/usopp-xs.jpg",
+      "image": "./img/figurine/Manga/usopp-500.jpg",
+      "price": "34,99€",
       "characteristics": [
         "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
+        "Mesure environ 17 cm sur socle",
+        "Gamme DXF The Grandline Men Wano Kuni",
         "Se présente en boîte cartonnée"
       ]
     },
-    {
-      "id": "figurine-robin",
-      "title": "Figurine Nico Robin",
-      "imagexs": "./img/figurine/Manga/One-piece-Robin-xs.jpg",
-      "image": "./img/figurine/Manga/One-piece-Robin-500.jpg",
-      "price": "64,99€",
-      "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
-      ]
-    },
-    {
-      "id": "figurine-nami",
-      "title": "Figurine Nami",
-      "imagexs": "./img/figurine/Manga/One-piece-Nami-xs.jpg",
-      "image": "./img/figurine/Manga/One-piece-Nami-500.jpg",
-      "price": "64,99€",
-      "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
-      ]
-    },
-    {
-      "id": "figurine-shank",
-      "title": "Figurine Shank et Luffy",
-      "imagexs": "./img/figurine/Manga/One-piece-Luffy-kid-xs.jpg",
-      "image": "./img/figurine/Manga/One-piece-Luffy-kid-500.jpg",
-      "price": "64,99€",
-      "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
-      ]
-    },
-    {
-      "id": "figurine-sanji",
-      "title": "Figurine Sanji",
-      "imagexs": "./img/figurine/Manga/One-piece-Sanji-xs.jpg",
-      "image": "./img/figurine/Manga/One-piece-Sanji-500.jpg",
-      "price": "64,99€",
-      "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
-      ]
-    },
+
     {
       "id": "figurine-goku",
       "title": "Figurine Goku petit",
-      "imagexs": "./img/figurine/Manga/Goku-petit-xs.jpg",
-      "image": "./img/figurine/Manga/Goku-petit-500.jpg",
-      "price": "64,99€",
+      "imagexs": "./img/figurine/Manga/Goku-blesse-xs.jpg",
+      "image": "./img/figurine/Manga/Goku-blesse-500.jpg",
+      "price": "29,99€",
       "characteristics": [
         "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
+        "Mesure environ 12 cm",
+        "Modèle Mini, fidèlement adapté au manga DBZ",
         "Se présente en boîte cartonnée"
       ]
     },
     {
       "id": "figurine-freezer",
       "title": "Figurine Freezer Forme Finale",
-      "imagexs": "./img/figurine/Manga/Freezer-Forme-Finale-xs.jpg",
-      "image": "./img/figurine/Manga/Freezer-Forme-Finale-500.jpg",
+      "imagexs": "./img/figurine/Manga/Freezer Final Form-xs.jpg",
+      "image": "./img/figurine/Manga/Freezer Final Form-500.jpg",
       "price": "64,99€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
+        "Figurine articulée en PVC de haute qualité",
+        "Mesure environ 15 cm",
+        "Forme Finale de Freezer",
         "Se présente en boîte cartonnée"
       ]
     },
@@ -151,8 +100,7 @@
       "price": "64,99€",
       "characteristics": [
         "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
+        "Mesure environ 15 cm sur socle",
         "Se présente en boîte cartonnée"
       ]
     },
@@ -227,8 +175,8 @@
     {
       "id": "figurine-vega",
       "title": "Street Fighter - Vega",
-      "imagexs": "./img/figurine/JeuxVideo/gouken-street-fighter-xs.jpg",
-      "image": "./img/figurine/JeuxVideo/gouken-street-fighter-500.jpg",
+      "imagexs": "./img/figurine/JeuxVideo/vega-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/vega-500.jpg",
       "price": "439,90€",
       "characteristics": [
         "Figurine en PVC de haute qualité",
@@ -318,8 +266,8 @@
     {
       "id": "figurine-megaman",
       "title": "Megaman",
-      "imagexs": "./img/figurine/JeuxVideo/megaman-xs.jpg",
-      "image": "./img/figurine/JeuxVideo/megaman-500.jpg",
+      "imagexs": "./img/figurine/JeuxVideo/mega-man-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/mega-man-500.jpg",
       "price": "36,90€",
       "characteristics": [
         "Figurine en PVC de haute qualité",
@@ -344,19 +292,19 @@
     {
       "id": "figurine-overwatch",
       "title": "Overwatch - Reaper",
-      "imagexs": "./img/figurine/JeuxVideo/overwatch-xs.jpg",
-      "image": "./img/figurine/JeuxVideo/overwatch-500.jpg",
+      "imagexs": "./img/figurine/JeuxVideo/overwatch-reaper-xs.jpg",
+      "image": "./img/figurine/JeuxVideo/overwatch-reaper-500.jpg",
       "price": "74,90€",
       "characteristics": [
         "Figurine en PVC de haute qualité",
-        "Mesure environ 16cm sur socle",
+        "Mesure environ 16 cm sur socle",
         "Good Smile Company",
         "Se présente en boîte cartonnée"
       ]
     },
     {
       "id": "figurine-last",
-      "title": "The last of us",
+      "title": "The last of us - Ellie",
       "imagexs": "./img/figurine/JeuxVideo/the-last-of-us-2-xs.jpg",
       "image": "./img/figurine/JeuxVideo/the-last-of-us-2-500.jpg",
       "price": "44,90€",
@@ -375,12 +323,12 @@
       "title": "One Piece Mug",
       "imagexs": "/img/goodies/One-piece-mug-xs.jpg",
       "image": "/img/goodies/One-piece-mug-500.jpg",
-      "price": "64,99€",
+      "price": "12,00€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Dimensions : 10 cm",
+        "Contenance : 460 ml",
+        "Fabriqué par Abystyle",
+        "Mug en céramique"
       ]
     },
     {
@@ -388,12 +336,12 @@
       "title": "One Piece Porte-clés Luffy",
       "imagexs": "/img/goodies/One-piece-porte-cles-Luffy-xs.jpg",
       "image": "/img/goodies/One-piece-porte-cles-Luffy-500.jpg",
-      "price": "64,99€",
+      "price": "6,00€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Dimensions : 4 x 5,5 cm",
+        "Matière : PVC",
+        "Fabriqué par Abystyle",
+        "Porte-clés Luffy D. Monkey"
       ]
     },
     {
@@ -401,12 +349,12 @@
       "title": "Doraemon Bronze",
       "imagexs": "/img/goodies/doraemon-bronze-xs.jpg",
       "image": "/img/goodies/doraemon-bronze-500.jpg",
-      "price": "64,99€",
+      "price": "450,00€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Dimensions : 11 cm",
+        "Matière : Bronze",
+        "Edition limitée à 500 exemplaires",
+        "COMIC TIME DORAEMON BRONZE"
       ]
     },
     {
@@ -414,12 +362,11 @@
       "title": "Doraemon Peluche",
       "imagexs": "/img/goodies/doraemon-xs.jpg",
       "image": "/img/goodies/doraemon-500.jpg",
-      "price": "64,99€",
+      "price": "44,99€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Peluche Doraemon",
+        "Mesure 25 cm ",
+        "Edition limitée Takashi Murakami x Uniqlo"
       ]
     },
     {
@@ -427,26 +374,24 @@
       "title": "Lampe Death Note",
       "imagexs": "/img/goodies/Death-note-xs.jpg",
       "image": "/img/goodies/Death-note-500.jpg",
-      "price": "29,99€",
-      "characteristics": [],
-      "description": [
-        "Vous pouvez brancher la lampe via un cable USB fourni avec ou utiliser des piles.",
-        "Méthode d'utilisation :",
-        "La lampe dispose d'un bouton tactile qui contrôle le changement de couleur.",
-        "Le modèle 16 couleurs dispose d'une télécommande en plus"
+      "price": "39,99€",
+      "characteristics": [
+        "Lampe Death Note Light Yagami",
+        "Disponible en 7 ou 16 couleurs",
+        "Bouton tactile pour le changement de couleur",
+        "Branchement USB ou piles"
       ]
     },
     {
-      "id": "goodies-ghibli-bus",
-      "title": "Ghibli Neko Bus",
-      "imagexs": "/img/goodies/Ghibli-neko-bus-xs.jpg",
-      "image": "/img/goodies/Ghibli-neko-bus-500.jpg",
-      "price": "64,99€",
+      "id": "goodies-death-note-carnet",
+      "title": "Carnet Death Note",
+      "imagexs": "/img/goodies/Carnet-Death-Note-cover-xs.jpg",
+      "image": "/img/goodies/Carnet-Death-Note-cover-500.jpg",
+      "price": "14,99€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Carnet Death Note avec Stylo en forme de Plume",
+        "Dimensions Carnet : 20,5 x 14,5 cm - Plume : 30 cm",
+        "Couverture en simili cuir de haute qualité"
       ]
     },
 
@@ -455,12 +400,12 @@
       "title": "Ghibli Tirelire No Face",
       "imagexs": "/img/goodies/tirelire-no-face-beneclic-chihiro_1-xs.jpg",
       "image": "/img/goodies/tirelire-no-face-beneclic-chihiro_1-500.jpg",
-      "price": "64,99€",
+      "price": "49,99€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Tirelire No Face - Le voyage de Chihiro",
+        "DImensions : 20 cm",
+        "Matière : PVC",
+        "Livrée dans une boîte fabriquée aux couleurs de la licence Le voyage de Chihiro"
       ]
     },
     {
@@ -468,12 +413,11 @@
       "title": "Ghibli Peluche Totoro",
       "imagexs": "/img/goodies/totoro-xs.jpg",
       "image": "/img/goodies/totoro-500.jpg",
-      "price": "64,99€",
+      "price": "20,99€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Peluche officielle Studio Ghibli",
+        "Dimensions : 15 cm",
+        "Mon voisin Totoro - Totoro"
       ]
     }
   ]

@@ -84,10 +84,10 @@
       "title": "Figurine Master Roshi",
       "imagexs": "./img/figurine/Manga/Master-Roshi-xs.jpg",
       "image": "./img/figurine/Manga/Master-Roshi-500.jpg",
-      "price": "64,99€",
+      "price": "34,99€",
       "characteristics": [
         "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
+        "Mesure environ 15 cm",
         "Gamme Memory de Banpresto",
         "Se présente en boîte cartonnée"
       ]
@@ -109,12 +109,12 @@
       "title": "Figurine Jiraiya",
       "imagexs": "./img/figurine/Manga/Jiraiya-xs.jpg",
       "image": "./img/figurine/Manga/Jiraiya-500.jpg",
-      "price": "64,99€",
+      "price": "59,89€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Figurine en résine",
+        "Dimensions : L12 x H20 x P15 cm",
+        "Poids : 7 kg",
+        "Edition limitée"
       ]
     },
     {
@@ -122,38 +122,38 @@
       "title": "Figurine Kisame",
       "imagexs": "./img/figurine/Manga/Kisame-xs.jpg",
       "image": "./img/figurine/Manga/Kisame-500.jpg",
-      "price": "64,99€",
+      "price": "344,89€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Figurine en résine",
+        "Dimensions : L32 x H41 x P33 cm",
+        "Poids : 13 kg",
+        "Edition limitée"
       ]
     },
     {
-      "id": "figurine-naruto ",
-      "title": "Figurine Naruto ",
+      "id": "figurine-naruto",
+      "title": "Figurine Naruto Uzumaki",
       "imagexs": "./img/figurine/Manga/naruto-xs.jpg",
       "image": "./img/figurine/Manga/naruto-500.jpg",
-      "price": "64,99€",
+      "price": "279,90€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Figurine en résine",
+        "Dimensions : L18 x H26 x P19 cm",
+        "Poids : 5 kg",
+        "Edition limitée"
       ]
     },
     {
-      "id": "figurine-jiraiya ",
-      "title": "Figurine Jiraiya ",
+      "id": "figurine-orochimaru",
+      "title": "Figurine Orochimaru",
       "imagexs": "./img/figurine/Manga/orochimaru-xs.jpg",
       "image": "./img/figurine/Manga/orochimaru-500.jpg",
-      "price": "64,99€",
+      "price": "549,90€",
       "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+        "Figurine en résine",
+        "Dimensions : L40 x H55 x P31 cm",
+        "Poids : 20 kg",
+        "Edition limitée"
       ]
     }
   ],

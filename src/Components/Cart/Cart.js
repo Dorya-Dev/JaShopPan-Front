@@ -3,8 +3,8 @@ import "./cart.css";
 
 function Cart() {
   return (
-    <div>
-      <div> testttttttttttttttttttttttt</div>
+    <div className="cart-content">
+      <img className="fill-cart" src=".\fill-cart.jpg" />
     </div>
   );
 }

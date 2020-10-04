@@ -32,11 +32,9 @@ function Products() {
             </p>
 
             <div className="button-cart">
-              <form method="get" action="/cart">
-                <Button id="cart" variant="outline-warning">
-                  <RiShoppingCart2Line className="logo-cart" /> Acheter
-                </Button>
-              </form>
+              <Button id="cart" variant="outline-warning">
+                <RiShoppingCart2Line className="logo-cart" /> Acheter
+              </Button>
             </div>
             {/* <p className="description">Description du produit</p>*/}
           </div>

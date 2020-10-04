@@ -20,7 +20,9 @@ function ProductRow(props) {
               </Card.Title>
               <Card.Text>{product.price}</Card.Text>
               <Link to={"/product?id=" + product.id}>
-                <Button variant="primary">Voir Produit</Button>
+                <Button id="product-button" variant="primary">
+                  Voir Produit
+                </Button>
               </Link>
             </Card.Body>
           </Card>

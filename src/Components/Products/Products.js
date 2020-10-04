@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { manga, videoGames, goodies } from "../products.json";
 import { Col, Row, Button } from "react-bootstrap";
 import { RiShoppingCart2Line } from "react-icons/ri";
+import { HashLink } from "react-router-hash-link";
 
 function Products() {
   const query = new URLSearchParams(useLocation().search);
@@ -32,9 +33,11 @@ function Products() {
             </p>
 
             <div className="button-cart">
-              <Button id="cart" variant="outline-warning">
-                <RiShoppingCart2Line className="logo-cart" /> Acheter
-              </Button>
+              <HashLink id="cart-link" to="/cart">
+                <Button id="cart" variant="outline-warning">
+                  <RiShoppingCart2Line className="logo-cart" /> Acheter
+                </Button>
+              </HashLink>
             </div>
             {/* <p className="description">Description du produit</p>*/}
           </div>

@@ -15,7 +15,6 @@ import { MdAccountCircle } from "react-icons/md";
 function Header() {
   const [displayNav, setDisplayNav] = useState(false);
   const [displaySearch, setDisplaySearch] = useState(false);
-  const [openNav, setOpenNav] = useState(true);
 
   function showMenuMobile() {
     if (displayNav) {
@@ -41,6 +40,14 @@ function Header() {
             <Link className="nav-link" to="/cart">
               Panier
             </Link>
+            <button
+              type="button"
+              onClick={() => {
+                setDisplaySearch(!displaySearch);
+              }}
+            >
+              test
+            </button>
           </Nav>
         </div>
       );

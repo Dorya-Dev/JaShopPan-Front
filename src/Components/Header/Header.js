@@ -15,12 +15,17 @@ import { MdAccountCircle } from "react-icons/md";
 function Header() {
   const [displayNav, setDisplayNav] = useState(false);
   const [displaySearch, setDisplaySearch] = useState(false);
+  const [openNav, setOpenNav] = useState(true);
 
   function showMenuMobile() {
     if (displayNav) {
       return (
         <div className="menu-mobile-global">
-          <Nav>
+          <Nav
+            onClick={() => {
+              setDisplayNav(false);
+            }}
+          >
             <Link className="nav-link" to="/">
               Accueil
             </Link>
@@ -110,7 +115,7 @@ function Header() {
         </Navbar>
       </div>
       {showMenuMobile()}
-      <div className="search-toogle">{showDisplaySearch()}</div>
+      <div id="search-toogle">{showDisplaySearch()}</div>
     </header>
   );
 }

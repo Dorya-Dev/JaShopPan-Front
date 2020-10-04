@@ -427,12 +427,13 @@
       "title": "Lampe Death Note",
       "imagexs": "/img/goodies/Death-note-xs.jpg",
       "image": "/img/goodies/Death-note-500.jpg",
-      "price": "64,99€",
-      "characteristics": [
-        "Figurine en PVC de haute qualité",
-        "Mesure environ 25 cm sur socle",
-        "Gamme Memory de Banpresto",
-        "Se présente en boîte cartonnée"
+      "price": "29,99€",
+      "characteristics": [],
+      "description": [
+        "Vous pouvez brancher la lampe via un cable USB fourni avec ou utiliser des piles.",
+        "Méthode d'utilisation :",
+        "La lampe dispose d'un bouton tactile qui contrôle le changement de couleur.",
+        "Le modèle 16 couleurs dispose d'une télécommande en plus"
       ]
     },
     {

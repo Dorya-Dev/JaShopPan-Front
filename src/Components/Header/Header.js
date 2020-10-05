@@ -40,14 +40,6 @@ function Header() {
             <Link className="nav-link" to="/cart">
               Panier
             </Link>
-            <button
-              type="button"
-              onClick={() => {
-                setDisplaySearch(!displaySearch);
-              }}
-            >
-              test
-            </button>
           </Nav>
         </div>
       );

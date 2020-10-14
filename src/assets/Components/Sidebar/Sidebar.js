@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./sidebar.css";
 import { AiFillFire } from "react-icons/ai";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Sidebar(props) {
+  const [category1, setCategory1] = useState([]);
+  const [category2, setCategory2] = useState([]);
+  const [category3, setCategory3] = useState([]);
+  const [category4, setCategory4] = useState([]);
+
+  useEffect(() => {
+    getSidebar();
+  }, []);
+
   let renderRandomProduct = (products) => {
     const randomIndex = Math.floor(Math.random() * products.length);
     let product = products[randomIndex];
-
     if (product) {
       return (
         <Card className="product-card">
@@ -36,6 +44,47 @@ function Sidebar(props) {
     }
   };
 
+  function getSidebar() {
+    const options = {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    fetch("http://localhost:4000/sidebar", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (products) => {
+          console.log(products);
+          setCategory1(
+            products.filter(function (product) {
+              return product.category == "mangas";
+            })
+          );
+          setCategory2(
+            products.filter(function (product) {
+              return product.category == "videoGames";
+            })
+          );
+          setCategory3(
+            products.filter(function (product) {
+              return product.category == "goodies";
+            })
+          );
+          setCategory4(
+            products.filter(function (product) {
+              return product.category == "mangas";
+            })
+          );
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  }
+
   return (
     <div className="Toptendance">
       <h3>
@@ -45,10 +94,10 @@ function Sidebar(props) {
       </h3>
 
       <hr />
-      {renderRandomProduct(props.category1)}
-      {renderRandomProduct(props.category2)}
-      {renderRandomProduct(props.category3)}
-      {renderRandomProduct(props.category4)}
+      {renderRandomProduct(category1)}
+      {renderRandomProduct(category2)}
+      {renderRandomProduct(category3)}
+      {renderRandomProduct(category4)}
     </div>
   );
 }

@@ -15,21 +15,11 @@
 .products .text-content p {
   margin-bottom: 5px;
 }
-/*.products .one-piece-mug {
-  text-align: center;
-}*/
-/*.text-content {
-  line-height: 10px;
-}*/
-/*.one-piece-mug {
-  width: 600px;
-  height: 600px;
-}*/
+
 .product-pic {
   width: 100%;
 }
-/*.characteristics-list {
-}*/
+
 #cart {
   color: black;
   border-color: orangered;

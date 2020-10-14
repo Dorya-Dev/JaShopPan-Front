@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./accueil.css";
 import { Col, Row, Carousel } from "react-bootstrap";
-import { Mangas, JeuxVideo, Goodies } from "../productAccueil.json";
 import ProductRow from "../../assets/Components/ProductRow/ProductRow";
 import Sidebar from "../../assets/Components/Sidebar/Sidebar";
-import { manga, videoGames, goodies } from "../products.json";
 import { HashLink } from "react-router-hash-link";
 
 function Accueil() {
+  const [mangas, setMangas] = useState([]);
+  const [videoGames, setVideoGames] = useState([]);
+  const [goodies, setGoodies] = useState([]);
+
   useEffect(() => {
     getHomeProduct();
   }, []);
@@ -16,7 +18,7 @@ function Accueil() {
     const options = {
       method: "GET",
       headers: {
-        "Content-Type": "apllication/json",
+        "Content-Type": "application/json",
       },
     };
 
@@ -26,7 +28,23 @@ function Accueil() {
       })
       .then(
         (products) => {
-          console.log(products);
+          setMangas(
+            products.filter(function (product) {
+              return product.category == "manga";
+            })
+          );
+
+          setVideoGames(
+            products.filter(function (product) {
+              return product.category == "videoGames";
+            })
+          );
+
+          setGoodies(
+            products.filter(function (product) {
+              return product.category == "goodies";
+            })
+          );
         },
         (error) => {
           console.log(error);
@@ -58,29 +76,22 @@ function Accueil() {
                 <h2>Figurines Mangas</h2>
               </HashLink>
               <hr />
-              <ProductRow products={Mangas} />
+              <ProductRow products={mangas} />
               <br />
               <HashLink id="content-link" to="/content#link-jeuvideo">
                 <h2>Figurines Jeux Vidéo</h2>
               </HashLink>
               <hr />
-              <ProductRow products={JeuxVideo} />
+              <ProductRow products={videoGames} />
               <br />
               <HashLink id="content-link" to="/content#link-goodies">
                 <h2>Goodies</h2>
               </HashLink>
               <hr />
-              <ProductRow products={Goodies} />
+              <ProductRow products={goodies} />
             </div>
           </Col>
-          <Col sm={0} lg={3}>
-            <Sidebar
-              category1={manga}
-              category2={videoGames}
-              category3={goodies}
-              category4={videoGames}
-            />
-          </Col>
+          <Col sm={0} lg={3}></Col>
         </Row>
       </div>
     </section>

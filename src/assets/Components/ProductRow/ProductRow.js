@@ -11,14 +11,17 @@ function ProductRow(props) {
       productsJSX.push(
         <Col sm={6} md={4} lg={3} className="product-row-col">
           <Card className="product-card">
-            <Card.Img variant="top" src={product.imagexs} />
+            <Card.Img
+              variant="top"
+              src={"http://localhost:4000/" + product.imagexs}
+            />
             <Card.Body>
               <Card.Title className="card-title">
                 {product.title.length > 15
                   ? product.title.substring(0, 12) + "..."
                   : product.title}
               </Card.Title>
-              <Card.Text>{product.price}</Card.Text>
+              <Card.Text>{product.price} €</Card.Text>
               <Link to={"/product?id=" + product.id}>
                 <Button id="product-button" variant="primary">
                   Voir Produit

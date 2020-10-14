@@ -18,7 +18,7 @@ function Sidebar(props) {
               ? product.title.substring(0, 17) + "..."
               : product.title}
           </Card.Title>
-          <Link to={"/product?id=" + product.id}>
+          <Link to={"/product?id=" + product._id}>
             <Button variant="primary">Voir Produit</Button>
           </Link>
         </Card.Body>

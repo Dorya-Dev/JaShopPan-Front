@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./accueil.css";
 import { Col, Row, Carousel } from "react-bootstrap";
 import { Mangas, JeuxVideo, Goodies } from "../productAccueil.json";
@@ -8,6 +8,32 @@ import { manga, videoGames, goodies } from "../products.json";
 import { HashLink } from "react-router-hash-link";
 
 function Accueil() {
+  useEffect(() => {
+    getHomeProduct();
+  }, []);
+
+  function getHomeProduct() {
+    const options = {
+      method: "GET",
+      headers: {
+        "Content-Type": "apllication/json",
+      },
+    };
+
+    fetch("http://localhost:4000/home", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (products) => {
+          console.log(products);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  }
+
   return (
     <section className="test">
       <div className="essai">

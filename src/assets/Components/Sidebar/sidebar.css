@@ -15,3 +15,11 @@
   width: 60%;
   margin: auto;
 }
+.btn-primary {
+  background-color: #e77b2e !important;
+  border: solid transparent !important;
+}
+.btn-primary:hover {
+  background-color: #c55e14 !important;
+  border: solid transparent !important;
+}

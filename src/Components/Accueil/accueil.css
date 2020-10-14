@@ -38,7 +38,14 @@
   background-color: black !important;
   width: 50px !important;
 }
-
+#product-button {
+  background-color: #e77b2e;
+  border: solid transparent;
+}
+#product-button:hover {
+  background-color: #c55e14;
+  border: solid transparent;
+}
 @media screen and (max-width: 1500px) {
   .content {
     height: auto;

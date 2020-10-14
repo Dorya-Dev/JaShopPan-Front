@@ -21,8 +21,8 @@ function ProductRow(props) {
                   ? product.title.substring(0, 12) + "..."
                   : product.title}
               </Card.Title>
-              <Card.Text>{product.price} €</Card.Text>
-              <Link to={"/product?id=" + product.id}>
+              <Card.Text>{product.price.toFixed(2)} €</Card.Text>
+              <Link to={"/product?id=" + product._id}>
                 <Button id="product-button" variant="primary">
                   Voir Produit
                 </Button>

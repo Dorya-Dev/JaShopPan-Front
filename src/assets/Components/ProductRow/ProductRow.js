@@ -14,8 +14,8 @@ function ProductRow(props) {
             <Card.Img variant="top" src={product.imagexs} />
             <Card.Body>
               <Card.Title className="card-title">
-                {product.title.length > 20
-                  ? product.title.substring(0, 17) + "..."
+                {product.title.length > 15
+                  ? product.title.substring(0, 12) + "..."
                   : product.title}
               </Card.Title>
               <Card.Text>{product.price}</Card.Text>

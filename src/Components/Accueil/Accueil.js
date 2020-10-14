@@ -11,10 +11,10 @@ function Accueil() {
   const [goodies, setGoodies] = useState([]);
 
   useEffect(() => {
-    getHomeProduct();
+    getHomeProducts();
   }, []);
 
-  function getHomeProduct() {
+  function getHomeProducts() {
     const options = {
       method: "GET",
       headers: {
@@ -22,29 +22,39 @@ function Accueil() {
       },
     };
 
-    fetch("http://localhost:4000/home", options)
+    fetch("http://localhost:4000/home?category=manga", options)
       .then((response) => {
         return response.json();
       })
       .then(
         (products) => {
-          setMangas(
-            products.filter(function (product) {
-              return product.category == "manga";
-            })
-          );
+          setMangas(products);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
 
-          setVideoGames(
-            products.filter(function (product) {
-              return product.category == "videoGames";
-            })
-          );
+    fetch("http://localhost:4000/home?category=videoGames", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (products) => {
+          setVideoGames(products);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
 
-          setGoodies(
-            products.filter(function (product) {
-              return product.category == "goodies";
-            })
-          );
+    fetch("http://localhost:4000/home?category=goodies", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (products) => {
+          setGoodies(products);
         },
         (error) => {
           console.log(error);
@@ -91,7 +101,14 @@ function Accueil() {
               <ProductRow products={goodies} />
             </div>
           </Col>
-          <Col sm={0} lg={3}></Col>
+          <Col sm={0} lg={3}>
+            <Sidebar
+              category1={mangas}
+              category2={videoGames}
+              category3={goodies}
+              category4={videoGames}
+            />
+          </Col>
         </Row>
       </div>
     </section>

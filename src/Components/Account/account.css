@@ -33,11 +33,7 @@ h1 {
   padding: 10px;
   width: 500px;
 }
-.contenair label input {
-  text-align: center;
-  font-size: 18px;
-  color: white;
-}
+
 .button button {
   margin: 20px;
   font-size: 15px;

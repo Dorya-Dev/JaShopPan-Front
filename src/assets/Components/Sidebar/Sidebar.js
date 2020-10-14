@@ -9,26 +9,31 @@ function Sidebar(props) {
     const randomIndex = Math.floor(Math.random() * products.length);
     let product = products[randomIndex];
 
-    return (
-      <Card className="product-card">
-        <Card.Img variant="top" src={product.imagexs} />
-        <Card.Body>
-          <Card.Title>
-            {product.title.length > 20
-              ? product.title.substring(0, 17) + "..."
-              : product.title}
-          </Card.Title>
-          <Link to={"/product?id=" + product._id}>
-            <Button variant="primary">Voir Produit</Button>
-          </Link>
-        </Card.Body>
-      </Card>
-      /*<div className="sidebar-product">
+    if (product) {
+      return (
+        <Card className="product-card">
+          <Card.Img
+            variant="top"
+            src={"http://localhost:4000/" + product.imagexs}
+          />
+          <Card.Body>
+            <Card.Title>
+              {product.title.length > 20
+                ? product.title.substring(0, 17) + "..."
+                : product.title}
+            </Card.Title>
+            <Link to={"/product?id=" + product._id}>
+              <Button variant="primary">Voir Produit</Button>
+            </Link>
+          </Card.Body>
+        </Card>
+        /*<div className="sidebar-product">
         <img src={product.imagexs} />
         <p>{product.title}</p>
         <p>{product.price}</p>
       </div>*/
-    );
+      );
+    }
   };
 
   return (

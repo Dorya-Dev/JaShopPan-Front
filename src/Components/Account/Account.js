@@ -46,31 +46,26 @@ function Account(props) {
       <div className="border">
         <h1>Connexion</h1>
         <div>
-          <div className="label">
-            <label>Email :</label>
-            <br />
-            <input
-              type="email"
-              id="email"
-              placeholder="Saisir votre email"
-              onChange={handleLogin}
-              value={login}
-            ></input>
-          </div>
+          <label>Email :</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Saisir votre email"
+            onChange={handleLogin}
+            value={login}
+          ></input>
         </div>
-        <div className="container">
-          <div className="input">
-            <label>Mot de passe :</label>
-            <br />
-            <input
-              type="password"
-              id="password"
-              placeholder="Saisir votre mot de passe"
-              onChange={handlePassword}
-              value={password}
-            ></input>
-          </div>
-        </div>
+
+        <label>Mot de passe :</label>
+        <br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Saisir votre mot de passe"
+          onChange={handlePassword}
+          value={password}
+        ></input>
         <div className="button">
           <button onClick={SignIn}>Se connecter</button>
           <div>
@@ -81,30 +76,65 @@ function Account(props) {
           <h1>Créer</h1>
           <p>Votre nouveau compte gratuit</p>
           <div>
-            <div className="label">
-              <label>Nouvel email :</label>
-              <br />
-              <input
-                type="email"
-                id="email"
-                placeholder="Saisir votre email"
-                onChange={newHandleLogin}
-                value={newLogin}
-              ></input>
-            </div>
+            <label>Nom :</label>
+            <br />
+            <input type="text" placeholder="Saisir votre Nom"></input>
           </div>
-          <div className="container">
-            <div className="input">
-              <label>Nouveau mot de passe :</label>
-              <br />
-              <input
-                type="password"
-                id="password"
-                placeholder="Saisir votre mot de passe"
-                onChange={newHandlePassword}
-                value={newPassword}
-              ></input>
-            </div>
+          <div>
+            <label>Prenom :</label>
+            <br />
+            <input type="text" placeholder="Saisir votre Prenom"></input>
+          </div>
+          <div>
+            <label>Nouvel email :</label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Saisir votre email"
+              onChange={newHandleLogin}
+              value={newLogin}
+            ></input>
+          </div>
+          <div>
+            <label>Date de naissance :</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Saisir votre Date de naissance"
+            ></input>
+          </div>
+          <label>Nouveau mot de passe :</label>
+          <br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Saisir votre mot de passe"
+            onChange={newHandlePassword}
+            value={newPassword}
+          ></input>
+          <div>
+            <label>Addresse :</label>
+            <br />
+            <input type="text" placeholder="Saisir votre Addresse"></input>
+          </div>
+          <div>
+            <label>Code Postale :</label>
+            <br />
+            <input type="text" placeholder="Saisir votre Code Postal"></input>
+          </div>
+          <div>
+            <label>Ville :</label>
+            <br />
+            <input type="text" placeholder="Saisir votre Ville"></input>
+          </div>
+          <div>
+            <label>Tel :</label>
+            <br />
+            <input
+              type="tel"
+              placeholder="Saisir votre numéros de téléphone"
+            ></input>
           </div>
           <div className="button">
             <button onClick={Register}>S'inscrire</button>

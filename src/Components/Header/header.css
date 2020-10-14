@@ -70,6 +70,9 @@
 #btn:hover {
   border-bottom: solid 1px#ffa766 !important;
 }
+#btn:focus {
+  box-shadow: none !important;
+}
 
 @media screen and (max-width: 880px) {
   .navbar-dark .navbar-nav .nav-link {

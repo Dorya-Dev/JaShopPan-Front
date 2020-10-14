@@ -11,10 +11,42 @@ import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaSearch } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
+import Modal from "react-bootstrap/Modal";
 
 function Header() {
   const [displayNav, setDisplayNav] = useState(false);
   const [displaySearch, setDisplaySearch] = useState(false);
+
+  const [searchBar, setSearchBar] = useState("");
+  const [searchResult, setSearchResult] = useState([]);
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  function getProductsOnSearch() {
+    const options = {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    fetch("http://localhost:4000/search?search=" + searchBar, options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (products) => {
+          setSearchResult(products);
+          console.log(products);
+          console.log(searchResult); // retourne tableau vide
+          handleShow();
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  }
 
   function showMenuMobile() {
     if (displayNav) {
@@ -54,8 +86,12 @@ function Header() {
             type="text"
             placeholder="Rechercher"
             className="mr-sm-2"
+            onChange={function (e) {
+              setSearchBar(e.target.value);
+            }}
+            value={searchBar}
           />
-          <Button id="btn" variant="outline-info">
+          <Button id="btn" variant="outline-info" onClick={getProductsOnSearch}>
             Rechercher
           </Button>
         </Form>
@@ -79,6 +115,7 @@ function Header() {
       );
     }
   }
+
   return (
     <header className="header">
       <GiHamburgerMenu
@@ -115,6 +152,18 @@ function Header() {
       </div>
       {showMenuMobile()}
       <div id="search-toogle">{showDisplaySearch()}</div>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Résultat pour : "{searchBar}"</Modal.Title>
+        </Modal.Header>
+        <Modal.Body></Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </header>
   );
 }

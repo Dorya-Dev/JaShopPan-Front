@@ -57,7 +57,6 @@ function Sidebar(props) {
       })
       .then(
         (products) => {
-          console.log(products);
           setCategory1(
             products.filter(function (product) {
               return product.category == "mangas";

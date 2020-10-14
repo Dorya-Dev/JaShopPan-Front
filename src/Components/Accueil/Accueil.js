@@ -22,7 +22,7 @@ function Accueil() {
       },
     };
 
-    fetch("http://localhost:4000/home?category=manga", options)
+    fetch("http://localhost:4000/home?category=mangas", options)
       .then((response) => {
         return response.json();
       })

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import "./content.css";
 import ProductRow from "../../assets/Components/ProductRow/ProductRow";
-import { manga, videoGames, goodies } from "../products.json";
 import Sidebar from "../../assets/Components/Sidebar/Sidebar";
 
 function Content() {
@@ -11,10 +10,10 @@ function Content() {
   const [goodies, setGoodies] = useState([]);
 
   useEffect(() => {
-    getContentProduct();
+    getContentProducts();
   }, []);
 
-  function getContentProduct() {
+  function getContentProducts() {
     const options = {
       method: "GET",
       headers: {
@@ -30,18 +29,18 @@ function Content() {
         (products) => {
           setMangas(
             products.filter(function (product) {
-              return product.category == "manga";
+              return product.category == "mangas";
             })
           );
 
           setVideoGames(
-            products.filter(function (product) {
+            products.filter((product) => {
               return product.category == "videoGames";
             })
           );
 
           setGoodies(
-            products.filter(function (product) {
+            products.filter((product) => {
               return product.category == "goodies";
             })
           );
@@ -58,7 +57,7 @@ function Content() {
           <div className="middle">
             <h2 id="link-mangas">Catégorie Mangas</h2>
             <hr />
-            <ProductRow products={manga} />
+            <ProductRow products={mangas} />
             <h2 id="link-jeuvideo">Catégorie Jeux Vidéo</h2>
             <hr />
             <ProductRow products={videoGames} />
@@ -71,7 +70,7 @@ function Content() {
         <Col sm={0} lg={3}>
           <div className="sidebar">
             <Sidebar
-              category1={manga}
+              category1={mangas}
               category2={videoGames}
               category3={goodies}
               category4={videoGames}

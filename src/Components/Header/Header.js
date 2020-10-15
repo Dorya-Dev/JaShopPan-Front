@@ -39,6 +39,7 @@ function Header() {
         (products) => {
           setSearchResults(products);
           handleShow();
+          setDisplaySearch(!displaySearch);
         },
         (error) => {
           console.log(error);

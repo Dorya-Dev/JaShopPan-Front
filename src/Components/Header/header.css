@@ -73,6 +73,18 @@
 #btn:focus {
   box-shadow: none !important;
 }
+.modal-body a {
+  text-decoration: none;
+  color: black;
+}
+.modal-body a:hover {
+  text-decoration: none;
+  color: #e77b2e;
+}
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #e77b2e !important;
+}
 
 @media screen and (max-width: 880px) {
   .navbar-dark .navbar-nav .nav-link {

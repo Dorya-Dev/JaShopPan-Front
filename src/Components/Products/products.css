@@ -1,8 +1,9 @@
 .products {
   margin-left: 20px;
-  display: flex;
+  /*display: flex;*/
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 .products .title {
   color: rgb(75, 70, 70);

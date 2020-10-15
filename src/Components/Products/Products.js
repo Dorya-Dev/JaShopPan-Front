@@ -42,7 +42,7 @@ function Products() {
         <Col sm={12} lg={6}>
           <img
             className="product-pic"
-            src={"http://localhost:4000/" + oneProduct.imagexs}
+            src={"http://localhost:4000/" + oneProduct.image}
             alt="none"
           />
         </Col>

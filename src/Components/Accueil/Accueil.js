@@ -73,11 +73,7 @@ function Accueil() {
             <img className="d-block w-100" src="Halloween.png" alt=" " />
           </Carousel.Item>
           <Carousel.Item>
-<<<<<<< HEAD
             <img className="d-block w-100" src="one piece.jpg" />
-=======
-            <img className="d-block w-100" src="GTA V.jpg" alt=" " />
->>>>>>> 33fccb12f458f79799271671015956456a545496
           </Carousel.Item>
         </Carousel>
       </div>

@@ -9,7 +9,7 @@ function ProductRow(props) {
 
     props.products.forEach((product, index) => {
       productsJSX.push(
-        <Col sm={6} md={4} lg={3} className="product-row-col">
+        <Col key={index} sm={6} md={4} lg={3} className="product-row-col">
           <Card className="product-card">
             <Card.Img
               variant="top"

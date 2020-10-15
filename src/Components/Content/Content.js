@@ -29,19 +29,19 @@ function Content() {
         (products) => {
           setMangas(
             products.filter(function (product) {
-              return product.category == "mangas";
+              return product.category === "mangas";
             })
           );
 
           setVideoGames(
             products.filter((product) => {
-              return product.category == "videoGames";
+              return product.category === "videoGames";
             })
           );
 
           setGoodies(
             products.filter((product) => {
-              return product.category == "goodies";
+              return product.category === "goodies";
             })
           );
         },

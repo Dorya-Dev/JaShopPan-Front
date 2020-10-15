@@ -18,7 +18,7 @@ function Header() {
   const [displaySearch, setDisplaySearch] = useState(false);
 
   const [searchBar, setSearchBar] = useState("");
-  const [searchResult, setSearchResult] = useState([]);
+  const [searchResults, setSearchResults] = useState([]);
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -37,15 +37,25 @@ function Header() {
       })
       .then(
         (products) => {
-          setSearchResult(products);
-          console.log(products);
-          console.log(searchResult); // retourne tableau vide
+          setSearchResults(products);
           handleShow();
         },
         (error) => {
           console.log(error);
         }
       );
+  }
+
+  function renderSearchResults() {
+    return searchResults.map((element, index) => {
+      return (
+        <li>
+          <Link to={"/product?id=" + element._id}>
+            {element.title} : &nbsp; {element.price.toFixed(2)} €
+          </Link>
+        </li>
+      );
+    });
   }
 
   function showMenuMobile() {
@@ -157,7 +167,9 @@ function Header() {
         <Modal.Header closeButton>
           <Modal.Title>Résultat pour : "{searchBar}"</Modal.Title>
         </Modal.Header>
-        <Modal.Body></Modal.Body>
+        <Modal.Body>
+          <ul>{renderSearchResults()}</ul>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

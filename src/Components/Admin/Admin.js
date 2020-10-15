@@ -41,7 +41,6 @@ function Admin() {
         "Content-Type": "application/json",
       },
     };
-
     fetch("http://localhost:4000/admin", options)
       .then((response) => {
         return response.json();
@@ -80,15 +79,15 @@ function Admin() {
       headers: {
         "Content-Type": "application/json",
       },
+      body: JSON.stringify(newProduct),
     };
-
     fetch("http://localhost:4000/admin", options)
       .then((response) => {
         return response.json();
       })
       .then(
-        (products) => {
-          setNewProduct(products);
+        () => {
+          return newProduct;
         },
         (error) => {
           console.log(error);
@@ -99,11 +98,29 @@ function Admin() {
   /**
    * Delete product
    */
+
   const deleteProduct = (id) => {
     /* TODO:
            - Ajouter le fetch de suppression du produit
            - Recharger la liste des produits à jour
         */
+    const options = {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(),
+    };
+
+    fetch("http://localhost:4000/admin?_id=" + id, options).then(
+      (response) => {
+        return response.json();
+      },
+
+      (error) => {
+        console.log(error);
+      }
+    );
   };
 
   /**

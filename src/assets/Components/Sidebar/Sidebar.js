@@ -59,22 +59,22 @@ function Sidebar(props) {
         (products) => {
           setCategory1(
             products.filter(function (product) {
-              return product.category == "mangas";
+              return product.category === "mangas";
             })
           );
           setCategory2(
             products.filter(function (product) {
-              return product.category == "videoGames";
+              return product.category === "videoGames";
             })
           );
           setCategory3(
             products.filter(function (product) {
-              return product.category == "goodies";
+              return product.category === "goodies";
             })
           );
           setCategory4(
             products.filter(function (product) {
-              return product.category == "mangas";
+              return product.category === "mangas";
             })
           );
         },

@@ -67,13 +67,13 @@ function Accueil() {
       <div className="essai">
         <Carousel className="content">
           <Carousel.Item>
-            <img className="d-block w-100" src="bienvenue.png" />
+            <img className="d-block w-100" src="bienvenue.png" alt=" " />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src="Halloween.png" />
+            <img className="d-block w-100" src="Halloween.png" alt=" " />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src="GTA V.jpg" />
+            <img className="d-block w-100" src="GTA V.jpg" alt=" " />
           </Carousel.Item>
         </Carousel>
       </div>

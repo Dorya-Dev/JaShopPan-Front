@@ -106,12 +106,12 @@ function Account(props) {
             ></input>
           </div>
           <div>
-            <label>Nouvel email :</label>
+            <label>Email :</label>
             <br />
             <input
               type="email"
               id="email"
-              placeholder=" email"
+              placeholder=" Email"
               onChange={handleNewAccount}
               name="email"
               value={newAccount.email}
@@ -128,12 +128,12 @@ function Account(props) {
               value={newAccount.birthday}
             ></input>
           </div>
-          <label>Nouveau mot de passe :</label>
+          <label>Mot de passe :</label>
           <br />
           <input
             type="password"
             id="password"
-            placeholder=" mot de passe"
+            placeholder=" Mot de passe"
             onChange={handleNewAccount}
             name="password"
             value={newAccount.password}

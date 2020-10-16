@@ -86,8 +86,9 @@ function Admin() {
         return response.json();
       })
       .then(
-        () => {
-          return newProduct;
+        (data) => {
+          alert(data.message);
+          getProducts();
         },
         (error) => {
           console.log(error);
@@ -109,18 +110,21 @@ function Admin() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(),
     };
 
-    fetch("http://localhost:4000/admin?_id=" + id, options).then(
-      (response) => {
+    fetch("http://localhost:4000/admin?_id=" + id, options)
+      .then((response) => {
         return response.json();
-      },
-
-      (error) => {
-        console.log(error);
-      }
-    );
+      })
+      .then(
+        (data) => {
+          alert(data.message);
+          getProducts();
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
   };
 
   /**

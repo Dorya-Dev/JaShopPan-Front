@@ -99,7 +99,7 @@ function Account(props) {
             <br />
             <input
               type="text"
-              placeholder=" Prenom"
+              placeholder=" Prénom"
               onChange={handleNewAccount}
               name="firstname"
               value={newAccount.firstname}

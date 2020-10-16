@@ -5,29 +5,9 @@ import { useHistory } from "react-router-dom";
 function Account(props) {
   const [display, setDisplay] = useState("");
   const history = useHistory();
-  const [newAccount, setnewAccount] = useState([]);
-  const [login, setLogin] = useState("");
-  const [password, setPassword] = useState("");
+  const [newAccount, setnewAccount] = useState({});
 
-  const handleLogin = (e) => {
-    setLogin(e.target.value);
-  };
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-  };
-
-  function SignIn() {
-    if (password === "1234" && login === "test@test.fr") {
-      setDisplay("Vous êtes connectés");
-      console.log("log in success");
-      history.push("/moncompte");
-      localStorage.setItem("compte", "test@test.fr");
-    } else {
-      setPassword("");
-      setDisplay("Mauvais mot de passe ou email");
-      console.log("wrong password or email");
-    }
-  }
+  const [account, setAccount] = useState({});
 
   const handleNewAccount = (e) => {
     setnewAccount({ ...newAccount, [e.target.name]: e.target.value });
@@ -57,6 +37,36 @@ function Account(props) {
       );
   };
 
+  const handleAccount = (e) => {
+    setAccount({ ...account, [e.target.name]: e.target.value });
+  };
+  const loggingIn = (e) => {
+    e.preventDefault();
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(account),
+    };
+    fetch("http://localhost:4000/account/login", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (data) => {
+          alert(data.message);
+          if (data.token) {
+            localStorage.setItem("token", data.token);
+          }
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
+
   return (
     <div className="account-body">
       <div className="border">
@@ -64,7 +74,14 @@ function Account(props) {
         <div>
           <label>Email :</label>
           <br />
-          <input type="email" id="email" placeholder=" email"></input>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            onChange={handleAccount}
+            value={account.email}
+            placeholder=" email"
+          ></input>
         </div>
 
         <label>Mot de passe :</label>
@@ -72,10 +89,13 @@ function Account(props) {
         <input
           type="password"
           id="password"
+          name="password"
+          onChange={handleAccount}
+          value={account.password}
           placeholder=" mot de passe"
         ></input>
         <div className="button">
-          <button>Se connecter</button>
+          <button onClick={loggingIn}>Se connecter</button>
           <div>
             <span className="return">{display}</span>
           </div>
@@ -193,5 +213,4 @@ function Account(props) {
     </div>
   );
 }
-
 export default Account;

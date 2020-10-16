@@ -3,12 +3,11 @@ import "./account.css";
 import { useHistory } from "react-router-dom";
 
 function Account(props) {
-  const [login, setLogin] = useState("");
-  const [password, setPassword] = useState("");
   const [display, setDisplay] = useState("");
   const history = useHistory();
-  const [newLogin, setNewLogin] = useState([]);
-  const [newPassword, setNewPassword] = useState([]);
+  const [newAccount, setnewAccount] = useState([]);
+  const [login, setLogin] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = (e) => {
     setLogin(e.target.value);
@@ -16,18 +15,6 @@ function Account(props) {
   const handlePassword = (e) => {
     setPassword(e.target.value);
   };
-
-  const newHandleLogin = (e) => {
-    setNewLogin(e.target.value);
-  };
-  const newHandlePassword = (e) => {
-    setNewPassword(e.target.value);
-  };
-
-  function Register() {
-    localStorage.setItem("newlog", newLogin);
-    localStorage.setItem("newpass", newPassword);
-  }
 
   function SignIn() {
     if (password === "1234" && login === "test@test.fr") {
@@ -41,6 +28,35 @@ function Account(props) {
       console.log("wrong password or email");
     }
   }
+
+  const handleNewAccount = (e) => {
+    setnewAccount({ ...newAccount, [e.target.name]: e.target.value });
+  };
+
+  const addAccount = (e) => {
+    e.preventDefault();
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newAccount),
+    };
+    fetch("http://localhost:4000/account/create", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (data) => {
+          alert(data.message);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
+
   return (
     <div className="account-body">
       <div className="border">
@@ -48,13 +64,7 @@ function Account(props) {
         <div>
           <label>Email :</label>
           <br />
-          <input
-            type="email"
-            id="email"
-            placeholder="Saisir votre email"
-            onChange={handleLogin}
-            value={login}
-          ></input>
+          <input type="email" id="email" placeholder=" email"></input>
         </div>
 
         <label>Mot de passe :</label>
@@ -62,12 +72,10 @@ function Account(props) {
         <input
           type="password"
           id="password"
-          placeholder="Saisir votre mot de passe"
-          onChange={handlePassword}
-          value={password}
+          placeholder=" mot de passe"
         ></input>
         <div className="button">
-          <button onClick={SignIn}>Se connecter</button>
+          <button>Se connecter</button>
           <div>
             <span className="return">{display}</span>
           </div>
@@ -78,12 +86,24 @@ function Account(props) {
           <div>
             <label>Nom :</label>
             <br />
-            <input type="text" placeholder="Saisir votre Nom"></input>
+            <input
+              type="text"
+              placeholder=" Nom"
+              onChange={handleNewAccount}
+              name="lastname"
+              value={newAccount.lastname}
+            ></input>
           </div>
           <div>
-            <label>Prenom :</label>
+            <label>Prénom :</label>
             <br />
-            <input type="text" placeholder="Saisir votre Prenom"></input>
+            <input
+              type="text"
+              placeholder=" Prenom"
+              onChange={handleNewAccount}
+              name="firstname"
+              value={newAccount.firstname}
+            ></input>
           </div>
           <div>
             <label>Nouvel email :</label>
@@ -91,9 +111,10 @@ function Account(props) {
             <input
               type="email"
               id="email"
-              placeholder="Saisir votre email"
-              onChange={newHandleLogin}
-              value={newLogin}
+              placeholder=" email"
+              onChange={handleNewAccount}
+              name="email"
+              value={newAccount.email}
             ></input>
           </div>
           <div>
@@ -101,7 +122,10 @@ function Account(props) {
             <br />
             <input
               type="text"
-              placeholder="Saisir votre Date de naissance"
+              placeholder=" Date de naissance"
+              onChange={handleNewAccount}
+              name="birthday"
+              value={newAccount.birthday}
             ></input>
           </div>
           <label>Nouveau mot de passe :</label>
@@ -109,35 +133,57 @@ function Account(props) {
           <input
             type="password"
             id="password"
-            placeholder="Saisir votre mot de passe"
-            onChange={newHandlePassword}
-            value={newPassword}
+            placeholder=" mot de passe"
+            onChange={handleNewAccount}
+            name="password"
+            value={newAccount.password}
           ></input>
           <div>
-            <label>Addresse :</label>
+            <label>Adresse :</label>
             <br />
-            <input type="text" placeholder="Saisir votre Addresse"></input>
+            <input
+              type="text"
+              placeholder=" Adresse"
+              onChange={handleNewAccount}
+              name="address"
+              value={newAccount.address}
+            ></input>
           </div>
           <div>
-            <label>Code Postale :</label>
+            <label>Code Postal :</label>
             <br />
-            <input type="text" placeholder="Saisir votre Code Postal"></input>
+            <input
+              type="text"
+              placeholder=" Code postal"
+              onChange={handleNewAccount}
+              name="postcode"
+              value={newAccount.postcode}
+            ></input>
           </div>
           <div>
             <label>Ville :</label>
             <br />
-            <input type="text" placeholder="Saisir votre Ville"></input>
+            <input
+              type="text"
+              placeholder=" Ville"
+              onChange={handleNewAccount}
+              name="city"
+              value={newAccount.city}
+            ></input>
           </div>
           <div>
             <label>Tel :</label>
             <br />
             <input
               type="tel"
-              placeholder="Saisir votre numéros de téléphone"
+              placeholder=" Numéro de téléphone"
+              onChange={handleNewAccount}
+              name="phone"
+              value={newAccount.phone}
             ></input>
           </div>
           <div className="button">
-            <button onClick={Register}>S'inscrire</button>
+            <button onClick={addAccount}>S'inscrire</button>
             <div>
               <span className="return"></span>
             </div>

@@ -4,7 +4,6 @@
   font-size: 20px;
   padding: 40px 50px;
   border-bottom: 5px solid white;
-  height: 50%;
 }
 .moncompte-body {
   min-height: calc(100vh - 168px);
@@ -15,7 +14,7 @@
   border: 1px transparent solid;
   border-radius: 10px;
 }
-.moncompte-body button {
+.moncompte-button {
   font-size: 20px;
   color: white;
   float: right;
@@ -31,11 +30,7 @@
 .moncompte-body button:hover {
   border-bottom: solid#ffa766 2px;
 }
-.simg {
-  height: 80px;
-  width: 80px;
-  margin: 10px;
-}
+
 .mon-compte-row {
   margin: 20px 0px;
   margin-left: 50px !important;
@@ -53,11 +48,23 @@ label:hover {
   margin: 20px;
   margin-bottom: 50px;
 }
+.title-moncompte svg {
+  position: relative;
+  bottom: 4px;
+  margin: 10px;
+}
+.title-moncompte svg:hover {
+  position: relative;
+  bottom: 4px;
+  margin: 10px;
+  font-size: 50px;
+  cursor: pointer;
+}
 .moncompte-contact p {
   color: white;
   font-size: 20px;
   text-align: left;
-  margin-left: 20%;
+  margin-right: 40%;
 }
 .fcicone {
   width: 30px;
@@ -69,4 +76,61 @@ label:hover {
   margin: 5px;
   bottom: 4px;
   position: relative;
+}
+.label-input label {
+  font-size: 20px;
+  color: white;
+}
+.label-input input {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: solid white 2px;
+  padding: 10px;
+  width: 500px;
+}
+.moncompte-button-modifier button {
+  margin: 20px;
+  font-size: 15px;
+  color: #ffa766;
+  font-family: "Righteous", serif;
+  border: solid#ffa766 2px;
+  border-radius: 10px;
+  background-color: #343a40;
+  margin-bottom: 50px;
+}
+.mon-compte-col svg {
+  position: relative;
+  bottom: 4px;
+  margin: 10px;
+  font-size: 50px;
+}
+
+.mon-compte-col svg:hover {
+  position: relative;
+  bottom: 4px;
+  margin: 10px;
+  font-size: 50px;
+  cursor: pointer;
+  color: #ffa766;
+}
+.mon-compte-col h3:hover {
+  cursor: pointer;
+  color: #ffa766;
+}
+
+@media screen and (max-width: 800px) {
+  .label-input input {
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: solid white 2px;
+    padding: 10px;
+    width: 250px;
+  }
+  .moncompte-contact p {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px;
+  }
 }

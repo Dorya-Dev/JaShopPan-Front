@@ -2,17 +2,180 @@ import React, { useState } from "react";
 import "./moncompte.css";
 import { Col, Row } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
-import { FcPhone } from "react-icons/fc";
-import { FcFeedback } from "react-icons/fc";
-import { FcRules } from "react-icons/fc";
+import { FcPhone, FcFeedback, FcRules } from "react-icons/fc";
 import { CgLogOff } from "react-icons/cg";
+import { FiEdit, FiBox } from "react-icons/fi";
+import { RiAccountBoxFill, RiUserSettingsFill } from "react-icons/ri";
+import { ImAddressBook } from "react-icons/im";
+import { HiOutlineMail } from "react-icons/hi";
+import { MdPayment } from "react-icons/md";
 
 function Moncompte() {
   const history = useHistory();
   const [tabOrder, setTabOrder] = useState("");
 
+  const [showEditAddress, setShowEditAddress] = useState("");
+  const [address, setAddress] = useState([]);
+
+  const [showEditSecurity, setShowEditSecurity] = useState("");
+  const [security, setSecurity] = useState([]);
+
+  const [showEditInfos, setShowEditInfos] = useState("");
+  const [infos, setInfos] = useState([]);
+
+  function displayEditAddress() {
+    if (showEditAddress) {
+      return (
+        <div>
+          <div className="label-input">
+            <label>Adresse :</label>
+            <br />
+            <input
+              type="text"
+              placeholder=" Adresse"
+              name="address"
+              value={address.address}
+              onChange={handleAddress}
+            ></input>
+          </div>
+          <div className="label-input">
+            <label>Code Postal :</label>
+            <br />
+            <input
+              type="text"
+              placeholder=" Code postal"
+              name="postcode"
+              value={address.postcode}
+              onChange={handleAddress}
+            ></input>
+          </div>
+          <div className="label-input">
+            <label>Ville :</label>
+            <br />
+            <input
+              type="text"
+              placeholder=" Ville"
+              name="city"
+              value={address.city}
+              onChange={handleAddress}
+            ></input>
+          </div>
+          <div className="moncompte-button-modifier">
+            <button onClick={addAddress}>Modifier</button>
+          </div>
+        </div>
+      );
+    }
+  }
+
+  function displayEditInfos() {
+    if (showEditInfos) {
+      return (
+        <div>
+          <div className="label-input">
+            <label>Nom :</label>
+            <br />
+            <input
+              type="text"
+              placeholder=" Nom"
+              name="lastname"
+              value={infos.lastname}
+              onClick={handleInfos}
+            ></input>
+          </div>
+          <div className="label-input">
+            <label>Prénom :</label>
+            <br />
+            <input
+              type="text"
+              placeholder=" Prénom"
+              name="firstname"
+              value={infos.firstname}
+              onClick={handleInfos}
+            ></input>
+          </div>
+          <div className="label-input">
+            <label className="label-input">Date de naissance :</label>
+            <br />
+            <input
+              type="text"
+              placeholder=" Date de naissance"
+              name="birthday"
+            ></input>
+          </div>
+          <div className="label-input">
+            <label>Tel :</label>
+            <br />
+            <input
+              type="tel"
+              placeholder=" Numéro de téléphone"
+              name="phone"
+              value={infos.phone}
+              onClick={handleInfos}
+            ></input>
+          </div>
+          <div className="moncompte-button-modifier">
+            <button>Modifier</button>
+          </div>
+        </div>
+      );
+    }
+  }
+
+  function displayEditSecurity() {
+    if (showEditSecurity) {
+      return (
+        <div>
+          <div className="label-input">
+            <label>Email :</label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              placeholder=" Email"
+              name="email"
+              value={security.email}
+              onClick={handleSecurity}
+            ></input>
+          </div>
+          <div className="label-input">
+            <label>Mot de passe :</label>
+            <br />
+            <input
+              type="password"
+              id="password"
+              placeholder=" Mot de passe"
+              name="password"
+              value={security.password}
+              onClick={handleSecurity}
+            ></input>
+          </div>
+          <div className="moncompte-button-modifier">
+            <button>Modifier</button>
+          </div>
+        </div>
+      );
+    }
+  }
+
   const handleSelect = (value) => {
     setTabOrder(value);
+  };
+
+  const handleAddress = (e) => {
+    setAddress({ ...address, [e.target.name]: e.target.value });
+  };
+
+  const handleSecurity = (e) => {
+    setSecurity({ ...security, [e.target.name]: e.target.value });
+  };
+
+  const handleInfos = (e) => {
+    setInfos({ ...infos, [e.target.name]: e.target.value });
+  };
+
+  const addAddress = (e) => {
+    e.preventDefault();
   };
 
   function Tabselect() {
@@ -20,35 +183,70 @@ function Moncompte() {
       case "order":
         return (
           <div>
-            <h2 className="title-moncompte">Vos commandes</h2>
+            <h2 className="title-moncompte">Commandes</h2>
           </div>
         );
 
       case "setting":
         return (
           <div>
-            <h2 className="title-moncompte">Paramètres de sécurité</h2>
+            <h2 className="title-moncompte">
+              Sécurité{" "}
+              <FiEdit
+                onClick={() => {
+                  setShowEditSecurity(!showEditSecurity);
+                }}
+              />
+            </h2>
+            <Row>
+              <Col></Col>
+              <Col>{displayEditSecurity()}</Col>
+            </Row>
           </div>
         );
 
       case "address":
         return (
           <div>
-            <h2 className="title-moncompte">Vos Adresses</h2>
+            <h2 className="title-moncompte">
+              Adresses{" "}
+              <FiEdit
+                onClick={() => {
+                  setShowEditAddress(!showEditAddress);
+                }}
+              />{" "}
+            </h2>
+            <Row>
+              <Col></Col>
+              <Col>{displayEditAddress()}</Col>
+            </Row>
           </div>
         );
 
       case "payment":
         return (
           <div>
-            <h2 className="title-moncompte">Vos Paiements</h2>
+            <h2 className="title-moncompte">
+              Paiements <FiEdit />
+            </h2>
           </div>
         );
 
-      case "message":
+      case "infos":
         return (
           <div>
-            <h2 className="title-moncompte">Votre Messagerie</h2>
+            <h2 className="title-moncompte">
+              Infos persos{" "}
+              <FiEdit
+                onClick={() => {
+                  setShowEditInfos(!showEditInfos);
+                }}
+              />
+            </h2>
+            <Row>
+              <Col></Col>
+              <Col>{displayEditInfos()}</Col>
+            </Row>
           </div>
         );
 
@@ -77,7 +275,6 @@ function Moncompte() {
         );
 
       default:
-        console.log("");
     }
   }
 
@@ -91,7 +288,7 @@ function Moncompte() {
 
   return (
     <div className="moncompte-body">
-      <button className="moncompe-button" onClick={Disconnect}>
+      <button className="moncompte-button" onClick={Disconnect}>
         <CgLogOff className="moncompte-icon" />
         Déconnexion
       </button>
@@ -104,71 +301,20 @@ function Moncompte() {
               handleSelect("order");
             }}
           >
-            <img
-              id="order"
-              className="simg"
-              src=".\img\Moncompte\commande.png"
-              alt="Vos commandes"
-            />
-            <label htmlFor="order">Vos Commandes</label>
+            <h3>
+              <FiBox /> Commandes
+            </h3>
           </Col>
-          <Col
-            className="mon-compte-col"
-            onClick={() => {
-              handleSelect("setting");
-            }}
-          >
-            <img
-              id="setting"
-              className="simg"
-              src=".\img\Moncompte\securite.png"
-              alt="Paramètres de sécurité"
-            />
-            <label htmlFor="setting">Paramètres de sécurité</label>
-          </Col>
-          <Col
-            className="mon-compte-col"
-            onClick={() => {
-              handleSelect("address");
-            }}
-          >
-            <img
-              id="address"
-              className="simg"
-              src=".\img\Moncompte\adresse.png"
-              alt="Adresse"
-            />
-            <label htmlFor="address">Vos Adresses</label>
-          </Col>
-        </Row>
-        <Row className="mon-compte-row">
           <Col
             className="mon-compte-col"
             onClick={() => {
               handleSelect("payment");
             }}
           >
-            <img
-              id="payment"
-              className="simg"
-              src=".\img\Moncompte\paiement.jpg"
-              alt="Vos paiements"
-            />
-            <label htmlFor="payment">Vos Paiements</label>
-          </Col>
-          <Col
-            className="mon-compte-col"
-            onClick={() => {
-              handleSelect("message");
-            }}
-          >
-            <img
-              id="message"
-              className="simg"
-              src=".\img\Moncompte\message.png"
-              alt="Messagerie"
-            />
-            <label htmlFor="message">Votre Messagerie</label>
+            <h3>
+              <MdPayment />
+              Paiements
+            </h3>
           </Col>
           <Col
             className="mon-compte-col"
@@ -176,13 +322,45 @@ function Moncompte() {
               handleSelect("contact");
             }}
           >
-            <img
-              id="contact"
-              className="simg"
-              src=".\img\Moncompte\contact.png"
-              alt="Nous Contacter"
-            />
-            <label htmlFor="contact">Nous Contacter</label>
+            <h3>
+              <HiOutlineMail />
+              Nous Contacter
+            </h3>
+          </Col>
+        </Row>
+        <Row className="mon-compte-row">
+          <Col
+            className="mon-compte-col"
+            onClick={() => {
+              handleSelect("address");
+            }}
+          >
+            <h3>
+              <ImAddressBook />
+              Adresses
+            </h3>
+          </Col>
+          <Col
+            className="mon-compte-col"
+            onClick={() => {
+              handleSelect("setting");
+            }}
+          >
+            <h3>
+              <RiUserSettingsFill />
+              Sécurité
+            </h3>
+          </Col>
+          <Col
+            className="mon-compte-col"
+            onClick={() => {
+              handleSelect("infos");
+            }}
+          >
+            <h3>
+              <RiAccountBoxFill />
+              Infos persos
+            </h3>
           </Col>
         </Row>
       </Col>

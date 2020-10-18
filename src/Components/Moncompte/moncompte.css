@@ -64,7 +64,7 @@ label:hover {
   color: white;
   font-size: 20px;
   text-align: left;
-  margin-right: 40%;
+  margin-left: 40%;
 }
 .fcicone {
   width: 30px;
@@ -132,5 +132,8 @@ label:hover {
     font-size: 20px;
     text-align: left;
     margin: 10px;
+  }
+  .mon-compte-col {
+    flex-basis: auto !important;
   }
 }

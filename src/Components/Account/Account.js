@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./account.css";
+import { useHistory } from "react-router-dom";
 
 function Account(props) {
   const [newAccount, setnewAccount] = useState({});
 
   const [account, setAccount] = useState({});
+  const history = useHistory();
 
   const handleNewAccount = (e) => {
     setnewAccount({ ...newAccount, [e.target.name]: e.target.value });
@@ -56,6 +58,7 @@ function Account(props) {
           alert(data.message);
           if (data.token) {
             localStorage.setItem("token", data.token);
+            history.push("/");
           }
         },
         (error) => {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./moncompte.css";
 import { Col, Row } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
@@ -22,6 +22,33 @@ function Moncompte() {
 
   const [showEditInfos, setShowEditInfos] = useState("");
   const [infos, setInfos] = useState([]);
+
+  useEffect(() => {
+    getUser();
+  }, []);
+
+  function getUser() {
+    const options = {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "bearer " + localStorage.getItem("token"),
+      },
+    };
+
+    fetch("http://localhost:4000/account/profile", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (data) => {
+          console.log(data);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  }
 
   function displayEditAddress() {
     if (showEditAddress) {
@@ -359,7 +386,7 @@ function Moncompte() {
           >
             <h3>
               <RiAccountBoxFill />
-              Infos persos
+              Infos perso
             </h3>
           </Col>
         </Row>

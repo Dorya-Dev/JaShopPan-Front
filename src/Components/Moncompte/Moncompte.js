@@ -77,6 +77,32 @@ function Moncompte() {
       },
       body: JSON.stringify(address),
     };
+
+    fetch("http://localhost:4000/account/profile", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (data) => {
+          alert(data.message);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
+
+  const editInfos = (e) => {
+    e.preventDefault();
+    const options = {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "bearer" + localStorage.getItem("token"),
+      },
+      body: JSON.stringify(infos),
+    };
+
     fetch("http://localhost:4000/account/profile", options)
       .then((response) => {
         return response.json();
@@ -148,7 +174,7 @@ function Moncompte() {
               placeholder=" Nom"
               name="lastname"
               value={infos.lastname}
-              onClick={handleInfos}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="label-input">
@@ -159,7 +185,7 @@ function Moncompte() {
               placeholder=" Prénom"
               name="firstname"
               value={infos.firstname}
-              onClick={handleInfos}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="label-input">
@@ -169,6 +195,8 @@ function Moncompte() {
               type="text"
               placeholder=" Date de naissance"
               name="birthday"
+              value={infos.birthday}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="label-input">
@@ -179,11 +207,11 @@ function Moncompte() {
               placeholder=" Numéro de téléphone"
               name="phone"
               value={infos.phone}
-              onClick={handleInfos}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="moncompte-button-modifier">
-            <button>Modifier</button>
+            <button onClick={editInfos}>Modifier</button>
           </div>
         </div>
       );

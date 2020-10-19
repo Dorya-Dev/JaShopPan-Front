@@ -13,6 +13,7 @@ import { MdPayment } from "react-icons/md";
 function Moncompte() {
   const history = useHistory();
   const [tabOrder, setTabOrder] = useState("");
+  const [user, setUser] = useState("");
 
   const [showEditAddress, setShowEditAddress] = useState("");
   const [address, setAddress] = useState([]);
@@ -42,7 +43,7 @@ function Moncompte() {
       })
       .then(
         (data) => {
-          console.log(data);
+          setUser(data);
         },
         (error) => {
           console.log(error);
@@ -226,7 +227,7 @@ function Moncompte() {
               />
             </h2>
             <Row>
-              <Col></Col>
+              <Col>{user.email}</Col>
               <Col>{displayEditSecurity()}</Col>
             </Row>
           </div>

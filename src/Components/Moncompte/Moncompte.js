@@ -86,6 +86,7 @@ function Moncompte() {
       .then(
         (data) => {
           alert(data.message);
+          getUser();
         },
         (error) => {
           console.log(error);
@@ -99,7 +100,7 @@ function Moncompte() {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "bearer" + localStorage.getItem("token"),
+        Authorization: "bearer " + localStorage.getItem("token"),
       },
       body: JSON.stringify(infos),
     };
@@ -111,6 +112,7 @@ function Moncompte() {
       .then(
         (data) => {
           alert(data.message);
+          getUser();
         },
         (error) => {
           console.log(error);
@@ -137,6 +139,7 @@ function Moncompte() {
       .then(
         (data) => {
           alert(data.message);
+          getUser();
         },
         (error) => {
           console.log(error);

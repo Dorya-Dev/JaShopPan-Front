@@ -24,6 +24,22 @@ function Moncompte() {
   const [showEditInfos, setShowEditInfos] = useState("");
   const [infos, setInfos] = useState([]);
 
+  const handleSelect = (value) => {
+    setTabOrder(value);
+  };
+
+  const handleAddress = (e) => {
+    setAddress({ ...address, [e.target.name]: e.target.value });
+  };
+
+  const handleSecurity = (e) => {
+    setSecurity({ ...security, [e.target.name]: e.target.value });
+  };
+
+  const handleInfos = (e) => {
+    setInfos({ ...infos, [e.target.name]: e.target.value });
+  };
+
   useEffect(() => {
     getUser();
   }, []);
@@ -50,6 +66,30 @@ function Moncompte() {
         }
       );
   }
+  const addAddress = (e) => {
+    e.preventDefault();
+
+    const options = {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "bearer " + localStorage.getItem("token"),
+      },
+      body: JSON.stringify(address),
+    };
+    fetch("http://localhost:4000/account/profile", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (data) => {
+          alert(data.message);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
 
   function displayEditAddress() {
     if (showEditAddress) {
@@ -123,7 +163,7 @@ function Moncompte() {
             ></input>
           </div>
           <div className="label-input">
-            <label className="label-input">Date de naissance :</label>
+            <label>Date de naissance :</label>
             <br />
             <input
               type="text"
@@ -185,26 +225,6 @@ function Moncompte() {
       );
     }
   }
-
-  const handleSelect = (value) => {
-    setTabOrder(value);
-  };
-
-  const handleAddress = (e) => {
-    setAddress({ ...address, [e.target.name]: e.target.value });
-  };
-
-  const handleSecurity = (e) => {
-    setSecurity({ ...security, [e.target.name]: e.target.value });
-  };
-
-  const handleInfos = (e) => {
-    setInfos({ ...infos, [e.target.name]: e.target.value });
-  };
-
-  const addAddress = (e) => {
-    e.preventDefault();
-  };
 
   function Tabselect() {
     switch (tabOrder) {

@@ -40,10 +40,6 @@ function Moncompte() {
     setInfos({ ...infos, [e.target.name]: e.target.value });
   };
 
-  const addAddress = (e) => {
-    e.preventDefault();
-  };
-
   useEffect(() => {
     getUser();
   }, []);
@@ -71,6 +67,56 @@ function Moncompte() {
         }
       );
   }
+  const addAddress = (e) => {
+    e.preventDefault();
+
+    const options = {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "bearer " + localStorage.getItem("token"),
+      },
+      body: JSON.stringify(address),
+    };
+
+    fetch("http://localhost:4000/account/profile", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (data) => {
+          alert(data.message);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
+
+  const editInfos = (e) => {
+    e.preventDefault();
+    const options = {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "bearer" + localStorage.getItem("token"),
+      },
+      body: JSON.stringify(infos),
+    };
+
+    fetch("http://localhost:4000/account/profile", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (data) => {
+          alert(data.message);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
 
   const editSecurity = (e) => {
     e.preventDefault();
@@ -192,7 +238,7 @@ function Moncompte() {
             ></input>
           </div>
           <div className="moncompte-button-modifier">
-            <button>Modifier</button>
+            <button onClick={editInfos}>Modifier</button>
           </div>
         </div>
       );

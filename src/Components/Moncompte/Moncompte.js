@@ -24,6 +24,22 @@ function Moncompte() {
   const [showEditInfos, setShowEditInfos] = useState("");
   const [infos, setInfos] = useState([]);
 
+  const handleSelect = (value) => {
+    setTabOrder(value);
+  };
+
+  const handleAddress = (e) => {
+    setAddress({ ...address, [e.target.name]: e.target.value });
+  };
+
+  const handleSecurity = (e) => {
+    setSecurity({ ...security, [e.target.name]: e.target.value });
+  };
+
+  const handleInfos = (e) => {
+    setInfos({ ...infos, [e.target.name]: e.target.value });
+  };
+
   useEffect(() => {
     getUser();
   }, []);
@@ -50,6 +66,30 @@ function Moncompte() {
         }
       );
   }
+  const editinfos = (e) => {
+    e.preventDefault();
+    const options = {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "bearer" + localStorage.getItem("token"),
+      },
+      body: JSON.stringify(infos),
+    };
+
+    fetch("http://localhost:4000/account/profile", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (data) => {
+          alert(data.message);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
 
   function displayEditAddress() {
     if (showEditAddress) {
@@ -108,7 +148,7 @@ function Moncompte() {
               placeholder=" Nom"
               name="lastname"
               value={infos.lastname}
-              onClick={handleInfos}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="label-input">
@@ -119,16 +159,18 @@ function Moncompte() {
               placeholder=" Prénom"
               name="firstname"
               value={infos.firstname}
-              onClick={handleInfos}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="label-input">
-            <label className="label-input">Date de naissance :</label>
+            <label>Date de naissance :</label>
             <br />
             <input
               type="text"
               placeholder=" Date de naissance"
               name="birthday"
+              value={infos.birthday}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="label-input">
@@ -139,11 +181,11 @@ function Moncompte() {
               placeholder=" Numéro de téléphone"
               name="phone"
               value={infos.phone}
-              onClick={handleInfos}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="moncompte-button-modifier">
-            <button>Modifier</button>
+            <button onClick={editinfos}>Modifier</button>
           </div>
         </div>
       );

@@ -186,26 +186,6 @@ function Moncompte() {
     }
   }
 
-  const handleSelect = (value) => {
-    setTabOrder(value);
-  };
-
-  const handleAddress = (e) => {
-    setAddress({ ...address, [e.target.name]: e.target.value });
-  };
-
-  const handleSecurity = (e) => {
-    setSecurity({ ...security, [e.target.name]: e.target.value });
-  };
-
-  const handleInfos = (e) => {
-    setInfos({ ...infos, [e.target.name]: e.target.value });
-  };
-
-  const addAddress = (e) => {
-    e.preventDefault();
-  };
-
   function Tabselect() {
     switch (tabOrder) {
       case "order":

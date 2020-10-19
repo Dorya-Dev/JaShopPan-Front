@@ -42,23 +42,25 @@
 label:hover {
   cursor: pointer;
 }
-.title-moncompte {
+.title-moncompte h2 {
   color: #ffa766;
   font-family: "Righteous", serif;
+  display: inline-block;
   margin: 20px;
-  margin-bottom: 50px;
 }
 .title-moncompte svg {
   position: relative;
-  bottom: 4px;
+  bottom: 8px;
   margin: 10px;
+  color: white;
+  font-size: 30px;
 }
 .title-moncompte svg:hover {
   position: relative;
-  bottom: 4px;
-  margin: 10px;
-  font-size: 50px;
+  bottom: 8px;
+  font-size: 30px;
   cursor: pointer;
+  color: #ffa766;
 }
 .moncompte-contact p {
   color: white;
@@ -116,6 +118,13 @@ label:hover {
 .mon-compte-col h3:hover {
   cursor: pointer;
   color: #ffa766;
+}
+.display-edit {
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 30px;
 }
 
 @media screen and (max-width: 800px) {

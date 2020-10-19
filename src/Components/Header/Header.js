@@ -111,7 +111,7 @@ function Header() {
   }
 
   function connect() {
-    let nom = localStorage.getItem("compte");
+    let nom = localStorage.getItem("token");
     if (nom) {
       return (
         <Link className="nav-link" to="/moncompte">

@@ -19,10 +19,30 @@ function Moncompte() {
   const [address, setAddress] = useState([]);
 
   const [showEditSecurity, setShowEditSecurity] = useState("");
-  const [security, setSecurity] = useState([]);
+  const [security, setSecurity] = useState({});
 
   const [showEditInfos, setShowEditInfos] = useState("");
   const [infos, setInfos] = useState([]);
+
+  const handleSelect = (value) => {
+    setTabOrder(value);
+  };
+
+  const handleAddress = (e) => {
+    setAddress({ ...address, [e.target.name]: e.target.value });
+  };
+
+  const handleSecurity = (e) => {
+    setSecurity({ ...security, [e.target.name]: e.target.value });
+  };
+
+  const handleInfos = (e) => {
+    setInfos({ ...infos, [e.target.name]: e.target.value });
+  };
+
+  const addAddress = (e) => {
+    e.preventDefault();
+  };
 
   useEffect(() => {
     getUser();
@@ -43,6 +63,7 @@ function Moncompte() {
       })
       .then(
         (data) => {
+          console.log(data);
           setUser(data);
         },
         (error) => {
@@ -50,6 +71,32 @@ function Moncompte() {
         }
       );
   }
+
+  const editSecurity = (e) => {
+    e.preventDefault();
+
+    const options = {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "bearer " + localStorage.getItem("token"),
+      },
+      body: JSON.stringify(security),
+    };
+
+    fetch("http://localhost:4000/account/profile", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (data) => {
+          alert(data.message);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
 
   function displayEditAddress() {
     if (showEditAddress) {
@@ -108,7 +155,7 @@ function Moncompte() {
               placeholder=" Nom"
               name="lastname"
               value={infos.lastname}
-              onClick={handleInfos}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="label-input">
@@ -119,16 +166,18 @@ function Moncompte() {
               placeholder=" Prénom"
               name="firstname"
               value={infos.firstname}
-              onClick={handleInfos}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="label-input">
-            <label className="label-input">Date de naissance :</label>
+            <label>Date de naissance :</label>
             <br />
             <input
               type="text"
               placeholder=" Date de naissance"
               name="birthday"
+              value={infos.birthday}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="label-input">
@@ -139,7 +188,7 @@ function Moncompte() {
               placeholder=" Numéro de téléphone"
               name="phone"
               value={infos.phone}
-              onClick={handleInfos}
+              onChange={handleInfos}
             ></input>
           </div>
           <div className="moncompte-button-modifier">
@@ -163,7 +212,7 @@ function Moncompte() {
               placeholder=" Email"
               name="email"
               value={security.email}
-              onClick={handleSecurity}
+              onChange={handleSecurity}
             ></input>
           </div>
           <div className="label-input">
@@ -175,59 +224,37 @@ function Moncompte() {
               placeholder=" Mot de passe"
               name="password"
               value={security.password}
-              onClick={handleSecurity}
+              onChange={handleSecurity}
             ></input>
           </div>
           <div className="moncompte-button-modifier">
-            <button>Modifier</button>
+            <button onClick={editSecurity}>Modifier</button>
           </div>
         </div>
       );
     }
   }
 
-  const handleSelect = (value) => {
-    setTabOrder(value);
-  };
-
-  const handleAddress = (e) => {
-    setAddress({ ...address, [e.target.name]: e.target.value });
-  };
-
-  const handleSecurity = (e) => {
-    setSecurity({ ...security, [e.target.name]: e.target.value });
-  };
-
-  const handleInfos = (e) => {
-    setInfos({ ...infos, [e.target.name]: e.target.value });
-  };
-
-  const addAddress = (e) => {
-    e.preventDefault();
-  };
-
   function Tabselect() {
     switch (tabOrder) {
       case "order":
         return (
-          <div>
-            <h2 className="title-moncompte">Commandes</h2>
+          <div className="title-moncompte">
+            <h2>Commandes</h2>
           </div>
         );
 
       case "setting":
         return (
-          <div>
-            <h2 className="title-moncompte">
-              Sécurité{" "}
-              <FiEdit
-                onClick={() => {
-                  setShowEditSecurity(!showEditSecurity);
-                }}
-              />
-            </h2>
+          <div className="title-moncompte">
+            <h2>Sécurité</h2>
+            <FiEdit
+              onClick={() => {
+                setShowEditSecurity(!showEditSecurity);
+              }}
+            />
             <Row>
-              <Col>{user.email}</Col>
+              <Col className="display-edit">Email: {user.email}</Col>
               <Col>{displayEditSecurity()}</Col>
             </Row>
           </div>
@@ -235,17 +262,18 @@ function Moncompte() {
 
       case "address":
         return (
-          <div>
-            <h2 className="title-moncompte">
-              Adresses{" "}
-              <FiEdit
-                onClick={() => {
-                  setShowEditAddress(!showEditAddress);
-                }}
-              />{" "}
-            </h2>
+          <div className="title-moncompte">
+            <h2> Adresses</h2>
+            <FiEdit
+              onClick={() => {
+                setShowEditAddress(!showEditAddress);
+              }}
+            />
             <Row>
-              <Col></Col>
+              <Col className="display-edit">
+                Adresse: {user.address} <br /> Code postal: {user.postcode}{" "}
+                <br /> Ville: {user.city}
+              </Col>
               <Col>{displayEditAddress()}</Col>
             </Row>
           </div>
@@ -253,8 +281,8 @@ function Moncompte() {
 
       case "payment":
         return (
-          <div>
-            <h2 className="title-moncompte">
+          <div className="title-moncompte">
+            <h2>
               Paiements <FiEdit />
             </h2>
           </div>
@@ -262,17 +290,19 @@ function Moncompte() {
 
       case "infos":
         return (
-          <div>
-            <h2 className="title-moncompte">
-              Infos persos{" "}
-              <FiEdit
-                onClick={() => {
-                  setShowEditInfos(!showEditInfos);
-                }}
-              />
-            </h2>
+          <div className="title-moncompte">
+            <h2>Infos perso</h2>
+            <FiEdit
+              onClick={() => {
+                setShowEditInfos(!showEditInfos);
+              }}
+            />
             <Row>
-              <Col></Col>
+              <Col className="display-edit">
+                Prénom: {user.firstname} <br /> Nom: {user.lastname} <br /> Date
+                de naissance: {user.birthday}
+                <br /> Tél: {user.phone}
+              </Col>
               <Col>{displayEditInfos()}</Col>
             </Row>
           </div>
@@ -280,21 +310,18 @@ function Moncompte() {
 
       case "contact":
         return (
-          <div>
-            <h2 className="title-moncompte">Nous Contacter</h2>
+          <div className="title-moncompte">
+            <h2>Nous Contacter</h2>
             <div className="moncompte-contact">
               <p>
-                {" "}
-                <FcPhone className="fcicone" /> Tel: +33000000000{" "}
+                <FcPhone className="fcicone" /> Tel: +33000000000
               </p>
               <p>
-                {" "}
                 <FcFeedback className="fcicone" /> Email:
-                jashoppan@lebocal.academy{" "}
+                jashoppan@lebocal.academy
               </p>
               <p>
-                {" "}
-                <FcRules className="fcicone" /> JaShopPan{" "}
+                <FcRules className="fcicone" /> JaShopPan
               </p>
               <p>18 rue du bocal</p>
               <p>06000 Nice</p>
@@ -307,9 +334,9 @@ function Moncompte() {
   }
 
   function Disconnect() {
-    let nom = localStorage.getItem("compte");
+    let nom = localStorage.getItem("token");
     if (nom) {
-      localStorage.removeItem("compte");
+      localStorage.removeItem("token");
       history.push("/");
     }
   }

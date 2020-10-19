@@ -68,7 +68,6 @@ function Products() {
                 </Button>
               </HashLink>
             </div>
-            {/* <p className="description">Description du produit</p>*/}
           </div>
         </Col>
       </Row>

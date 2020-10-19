@@ -39,6 +39,9 @@ function Moncompte() {
   const handleInfos = (e) => {
     setInfos({ ...infos, [e.target.name]: e.target.value });
   };
+  const addAddress = (e) => {
+    e.preventDefault();
+  };
 
   useEffect(() => {
     getUser();

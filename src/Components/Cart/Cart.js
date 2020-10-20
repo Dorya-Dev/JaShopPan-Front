@@ -1,5 +1,6 @@
 import userEvent from "@testing-library/user-event";
 import React, { useEffect, useState } from "react";
+import { Col, Row } from "react-bootstrap";
 import "./cart.css";
 
 function Cart() {
@@ -7,7 +8,18 @@ function Cart() {
 
   const showCartProducts = cart.map((product, index) => (
     <div key={index}>
-      {product.productId} {product.name} {product.price} {product.quantity}
+      <Row className="showCart">
+        <Col>
+          <img
+            className="product-pic"
+            src={"http://localhost:4000/" + product.imagexs}
+            alt="none"
+          />
+        </Col>
+        <Col>{product.name}</Col>
+        <Col>{product.price}</Col>
+        <Col>{product.quantity}</Col>
+      </Row>
     </div>
   ));
 
@@ -31,7 +43,6 @@ function Cart() {
       .then(
         (data) => {
           setCart(data);
-          console.log(data);
         },
         (error) => {
           console.log(error);
@@ -39,11 +50,7 @@ function Cart() {
       );
   }
 
-  return (
-    <div>
-      <div>{showCartProducts}</div>
-    </div>
-  );
+  return <div>{showCartProducts}</div>;
 }
 
 export default Cart;

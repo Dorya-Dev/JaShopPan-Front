@@ -54,7 +54,6 @@ function Products() {
       .then(
         (data) => {
           history.push("/cart");
-          setOneProduct(data);
         },
         (error) => {
           console.log(error);

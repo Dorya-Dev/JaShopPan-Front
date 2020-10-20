@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./products.css";
-import { useLocation } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import { Col, Row, Button } from "react-bootstrap";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { HashLink } from "react-router-hash-link";

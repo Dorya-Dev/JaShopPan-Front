@@ -59,7 +59,6 @@ function Moncompte() {
       })
       .then(
         (data) => {
-          console.log(data);
           setUser(data);
         },
         (error) => {

@@ -13,6 +13,7 @@ function Products() {
     characteristics: [],
     price: 0,
   });
+  const history = useHistory();
 
   useEffect(() => {
     getOneProduct();
@@ -34,6 +35,31 @@ function Products() {
         setOneProduct(oneProduct);
       });
   }
+
+  const buyProduct = (e) => {
+    e.preventDefault();
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "bearer " + localStorage.getItem("token"),
+      },
+      body: JSON.stringify({ id, quantity: 1 }),
+    };
+
+    fetch("http://localhost:4000/account/cart", options)
+      .then((response) => {
+        return response.json();
+      })
+      .then(
+        (data) => {
+          history.push("/cart");
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
 
   return (
     <div className="products">
@@ -60,13 +86,11 @@ function Products() {
                 })}
               </ul>
             </p>
-
             <div className="button-cart">
-              <HashLink id="cart-link" to="/cart">
-                <Button id="cart" variant="outline-warning">
-                  <RiShoppingCart2Line className="logo-cart" /> Acheter
-                </Button>
-              </HashLink>
+              <Button id="cart" variant="outline-warning" onClick={buyProduct}>
+                <RiShoppingCart2Line className="logo-cart" />
+                Acheter
+              </Button>
             </div>
           </div>
         </Col>
